@@ -73,7 +73,7 @@ module RsApi
 end
 
 # Example
-a = RsApi::PlayerExp.new('zedifer')
-a.display
+# a = RsApi::PlayerExp.new('zedifer')
+# a.display
 # puts a.max_skill_level
 # puts a.skills_at_max_level

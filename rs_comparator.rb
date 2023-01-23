@@ -1,6 +1,6 @@
 # frozen_string_literal:true
 
-require './rs_api'
+require './rs_playerExp'
 require './rs_const'
 require 'text-table'
 
@@ -58,7 +58,7 @@ module RsApi
 end
 
 # Example
-a = RsApi::Comparator.new('tibthedragon','bubba tut')
-a.compare
+# a = RsApi::Comparator.new('tibthedragon','bubba tut')
+# a.compare
 # a.new_players('tibthedragon', 'zedifer')
 # a.compare

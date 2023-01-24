@@ -1,7 +1,7 @@
 # frozen_string_literal:true
 
 require './rs_playerExp'
-require './rs_const'
+require './lib/rs_const'
 require 'text-table'
 
 module RsApi

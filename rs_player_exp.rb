@@ -4,8 +4,8 @@ require 'uri'
 require 'net/http'
 require 'active_support'
 require 'active_support/core_ext/numeric/conversions'
-require './lib/rs_const'
 require 'text-table'
+require './lib/rs_const'
 
 module RsApi
   # Class PlayerExp pulls from Hiscores for player level/exp in each skill.
@@ -37,11 +37,11 @@ module RsApi
     end
 
     def max_skill_level
-      loaded_xp.map { |v| v[1] }.max
+      loaded_xp.map { |value| value[1] }.max
     end
 
     def skills_at_max_level
-      loaded_xp.filter_map.with_index { |v, i| SKILL_ID_CONST[i] if v[1] == max_skill_level }
+      loaded_xp.filter_map.with_index { |value, i| SKILL_ID_CONST[i] if value[1] == max_skill_level }
     end
 
     private

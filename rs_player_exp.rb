@@ -23,9 +23,9 @@ module RsApi
 
       loaded_xp.each_with_index do |value, i|
         if i.zero?
-          ["#{SKILL_ID_CONST[i]}", "Total Level: #{value[1]}", "Total Experience: #{value[2]}"] # rubocop:disable Style/RedundantInterpolation
+          [SKILL_ID_CONST[i], "Total Level: #{value[1]}", "Total Experience: #{value[2]}"]
         else
-          table.rows << ["#{SKILL_ID_CONST[i]}", "Level: #{value[1]}", "Experience: #{value[2]}"] # rubocop:disable Style/RedundantInterpolation
+          table.rows << [SKILL_ID_CONST[i], "Level: #{value[1]}", "Experience: #{value[2]}"]
         end
       end
 
@@ -37,11 +37,19 @@ module RsApi
     end
 
     def max_skill_level
+      # Returns the highest skill level out of all sklls
       loaded_xp.map { |value| value[1] }.max
     end
 
     def skills_at_max_level
+      # Returns a array containing only skills at max_skill_level
       loaded_xp.filter_map.with_index { |value, i| SKILL_ID_CONST[i] if value[1] == max_skill_level }
+    end
+
+    def all_skill_experience
+      # Retuns array containing the experience for each skill
+      # Index of skills corresponds to RsConst::SKILL_ID_CONST
+      loaded_xp.map { |n| n.last.delete(',').to_i }
     end
 
     private
@@ -57,10 +65,12 @@ module RsApi
     end
 
     def uri
+      # To be removed and put into new class
       @uri ||= URI('https://secure.runescape.com/m=hiscore/index_lite.ws?')
     end
 
     def parsed
+      # To be updated and put into new class
       uri.query = URI.encode_www_form(params)
       response = Net::HTTP.get_response(uri)
       response.body.split(/\n/).map { |item| format(item) }

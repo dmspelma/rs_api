@@ -45,5 +45,5 @@ module RsApi
 end
 
 # Example
-a = RsApi::PlayerCompare.new('tibthedragon', 'bubba tut')
-a.display
+# a = RsApi::PlayerCompare.new('tibthedragon', 'bubba tut')
+# a.display

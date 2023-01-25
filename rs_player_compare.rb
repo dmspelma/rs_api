@@ -17,9 +17,9 @@ module RsApi
         diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
         results << case diff <=> 0
         when -1
-          [skill_name, @player2.username, (-diff).to_s(:delimited)]
+          [skill_name, @player2.username, (-diff).delimited]
         when 1
-          [skill_name, @player1.username, (diff).to_s(:delimited)]
+          [skill_name, @player1.username, diff.delimited]
         else # 0
           [skill_name, 'TIE', '0']
         end

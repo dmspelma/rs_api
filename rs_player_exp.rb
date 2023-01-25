@@ -1,11 +1,9 @@
 # frozen_string_literal:true
 
-require 'uri'
-require 'net/http'
-require 'active_support'
-require 'active_support/core_ext/numeric/conversions'
 require 'text-table'
 require './lib/rs_const'
+require './lib/rs_int_extend'
+require './rs_request'
 
 module RsApi
   # Class PlayerExp pulls from Hiscores for player level/exp in each skill.
@@ -60,19 +58,18 @@ module RsApi
 
     def format(value)
       value = value.split(',')
-      value[2] = value[2].to_i.to_s(:delimited)
+      value[2] = value[2].to_i.delimited
       value
     end
 
-    def uri
-      # To be removed and put into new class
-      @uri ||= URI('https://secure.runescape.com/m=hiscore/index_lite.ws?')
+    def hiscore_url
+      # Url for Runescape's Highscore API
+      'https://secure.runescape.com/m=hiscore/index_lite.ws?'
     end
 
     def parsed
-      # To be updated and put into new class
-      uri.query = URI.encode_www_form(params)
-      response = Net::HTTP.get_response(uri)
+      # Response is in CSV format
+      response = RsRequest.new(hiscore_url, params).get
       response.body.split(/\n/).map { |item| format(item) }
     end
 

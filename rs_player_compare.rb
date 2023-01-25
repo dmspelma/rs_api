@@ -27,7 +27,7 @@ module RsApi
     end
 
     def display
-      compare
+      compare if results.empty?
       table.head = %w[SKILL WINNER XP-DIFFERENCE]
       puts table
     end
@@ -45,5 +45,5 @@ module RsApi
 end
 
 # Example
-# a = RsApi::PlayerCompare.new('tibthedragon', 'bubba tut')
-# a.display
+a = RsApi::PlayerCompare.new('tibthedragon', 'bubba tut')
+a.display

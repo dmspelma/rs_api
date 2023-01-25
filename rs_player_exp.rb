@@ -8,6 +8,7 @@ require './rs_request'
 module RsApi
   # Class PlayerExp pulls from Hiscores for player level/exp in each skill.
   class PlayerExp
+    class PlayerNotFound < StandardError; end
     attr_reader :username
 
     include RSConst
@@ -17,16 +18,7 @@ module RsApi
     end
 
     def display
-      table.head = [{ value: "Player: #{@username}", colspan: 3, align: :center }]
-
-      loaded_xp.each_with_index do |value, i|
-        if i.zero?
-          [SKILL_ID_CONST[i], "Total Level: #{value[1]}", "Total Experience: #{value[2]}"]
-        else
-          table.rows << [SKILL_ID_CONST[i], "Level: #{value[1]}", "Experience: #{value[2]}"]
-        end
-      end
-
+      table_data if table.rows.empty?
       puts table
     end
 
@@ -53,7 +45,19 @@ module RsApi
     private
 
     def table
-      @table ||= Text::Table.new horizontal_padding: 2
+      @table ||= Text::Table.new(horizontal_padding: 2)
+    end
+
+    def table_data
+      table.head = [{ value: "Player: #{@username}", colspan: 3, align: :center }]
+
+      loaded_xp.each_with_index do |value, i|
+        table.rows << if i.zero?
+          [SKILL_ID_CONST[i], "Total Level: #{value[1]}", "Total Experience: #{value[2]}"]
+        else
+          [SKILL_ID_CONST[i], "Level: #{value[1]}", "Experience: #{value[2]}"]
+        end
+      end
     end
 
     def format(value)
@@ -70,7 +74,11 @@ module RsApi
     def parsed
       # Response is in CSV format
       response = RsRequest.new(hiscore_url, params).get
+      raise PlayerNotFound if response.message == 'Not Found'
+
       response.body.split(/\n/).map { |item| format(item) }
+    rescue StandardError => e
+      puts "#{e.message} | Please check Username spelling."
     end
 
     def params

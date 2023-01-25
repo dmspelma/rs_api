@@ -1,0 +1,6 @@
+Metrics/MethodLength:
+  Max: 25
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+Layout/CaseIndentation:
+  EnforcedStyle: end

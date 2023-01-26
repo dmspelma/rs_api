@@ -1,8 +1,5 @@
 # frozen_string_literal:true
 
-require 'uri'
-require 'net/http'
-
 module RsApi
   # Class RsRequest that handles any Rs Api request
   class RsRequest

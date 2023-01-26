@@ -1,15 +1,13 @@
 # frozen_string_literal:true
 
-require './rs_player_exp'
-
 module RsApi
   # class PlayerCompare that compares two PlayerExp skill experience.
   class PlayerCompare
-    include RSConst
+    include RsConstants
 
     def initialize(player1, player2)
-      @player1 = PlayerExp.new(player1)
-      @player2 = PlayerExp.new(player2)
+      @player1 = PlayerExperience.new(player1)
+      @player2 = PlayerExperience.new(player2)
     end
 
     def compare

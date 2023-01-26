@@ -1,6 +1,7 @@
 # frozen_string_literal:true
 
-module RSConst
+# Default Runescape-related constants
+module RsConstants
   MAX = 13_034_431 # Xp needed to lv 99 in any skill,
   # useless now BUT could be useful in future.
 

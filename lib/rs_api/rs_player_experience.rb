@@ -1,17 +1,12 @@
 # frozen_string_literal:true
 
-require 'text-table'
-require './lib/rs_const'
-require './lib/rs_int_extend'
-require './rs_request'
-
 module RsApi
   # Class PlayerExp pulls from Hiscores for player level/exp in each skill.
-  class PlayerExp
+  class PlayerExperience
     class PlayerNotFound < StandardError; end
     attr_reader :username
 
-    include RSConst
+    include RsConstants
 
     def initialize(username)
       @username = username
@@ -28,12 +23,12 @@ module RsApi
 
     def max_skill_level
       # Returns the highest skill level out of all sklls
-      loaded_xp.map { |value| value[1] }.max
+      loaded_xp[1..].map { |value| value[1].to_i }.max.to_s
     end
 
     def skills_at_max_level
       # Returns a array containing only skills at max_skill_level
-      loaded_xp.filter_map.with_index { |value, i| SKILL_ID_CONST[i] if value[1] == max_skill_level }
+      loaded_xp[1..].filter_map.with_index { |value, i| SKILL_ID_CONST[i] if value[1] == max_skill_level }
     end
 
     def all_skill_experience

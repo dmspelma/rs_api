@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    text-table (1.2.4)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  text-table (~> 1.2, >= 1.2.4)!
+
+BUNDLED WITH
+   2.3.7

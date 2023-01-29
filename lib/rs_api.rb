@@ -3,7 +3,7 @@
 require 'net/http'
 require 'text-table'
 require 'uri'
-require 'rs_api/rs_int_extend'
+require_relative 'rs_api/rs_int_extend'
 
 # Base RsApi module for autoloading files
 module RsApi

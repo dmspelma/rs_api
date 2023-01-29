@@ -6,3 +6,5 @@ Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 Layout/CaseIndentation:
   EnforcedStyle: end
+Metrics/BlockLength:
+  Max: 40

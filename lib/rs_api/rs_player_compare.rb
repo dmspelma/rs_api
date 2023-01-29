@@ -3,6 +3,8 @@
 module RsApi
   # class PlayerCompare that compares two PlayerExp skill experience.
   class PlayerCompare
+    attr_reader :player1, :player2
+
     include RsConstants
 
     def initialize(player1, player2)
@@ -15,11 +17,11 @@ module RsApi
         diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
         results << case diff <=> 0
         when -1
-          [skill_name, @player2.username, (-diff).delimited]
+          [skill_name, @player2.username, -diff]
         when 1
-          [skill_name, @player1.username, diff.delimited]
+          [skill_name, @player1.username, diff]
         else # 0
-          [skill_name, 'TIE', '0']
+          [skill_name, 'TIE', 0]
         end
       end
     end
@@ -36,8 +38,16 @@ module RsApi
 
     private
 
+    def formatted_results
+      f_result = results.dup
+      f_result.each_with_index do |result, _i|
+        result[2] = result[2].delimited
+      end
+      f_result
+    end
+
     def table
-      @table ||= Text::Table.new(rows: results, horizontal_padding: 2)
+      @table ||= Text::Table.new(rows: formatted_results, horizontal_padding: 2)
     end
   end
 end

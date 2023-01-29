@@ -1,7 +1,13 @@
 # frozen_string_literal:true
 
+# Uncomment below to run Example(s) in file. May also need to for other related files.
+# require 'text-table'
+# require_relative 'rs_request'
+# require_relative 'rs_int_extend'
+# require_relative 'rs_constants'
+
 module RsApi
-  # Class PlayerExp pulls from Hiscores for player level/exp in each skill.
+  # Class PlayerExp pulls, from Hiscores, player level/experience in each skill.
   class PlayerExperience
     class PlayerNotFound < StandardError; end
     attr_reader :username
@@ -28,7 +34,8 @@ module RsApi
 
     def skills_at_max_level
       # Returns a array containing only skills at max_skill_level
-      loaded_xp[1..].filter_map.with_index { |value, i| SKILL_ID_CONST[i] if value[1] == max_skill_level }
+      # SKILL_ID_CONST[i+1] | i is +1 because I don't want to load the overall skill totals
+      loaded_xp[1..].filter_map.with_index { |value, i| SKILL_ID_CONST[i+1] if value[1] == max_skill_level }
     end
 
     def all_skill_experience
@@ -83,7 +90,8 @@ module RsApi
 end
 
 # Example
-# a = RsApi::PlayerExp.new('zedifer')
+# a = RsApi::PlayerExperience.new('tibthedragon')
 # a.display
 # puts a.max_skill_level
 # puts a.skills_at_max_level
+# puts a.all_skill_experience

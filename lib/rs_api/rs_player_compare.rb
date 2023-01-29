@@ -1,7 +1,5 @@
 # frozen_string_literal:true
 
-# require_relative 'rs_int_extend'
-
 module RsApi
   # class PlayerCompare that compares two PlayerExp skill experience.
   class PlayerCompare

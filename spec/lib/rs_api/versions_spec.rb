@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'rs_api/version'
 
 module RsApi

@@ -3,7 +3,6 @@
 module RsApi
   class RsRequestTest
     RSpec.describe RsRequest do
-
       before do
         @url = URI('https://secure.runescape.com/m=hiscore/index_lite.ws?')
         @params = { player: 'player1' }

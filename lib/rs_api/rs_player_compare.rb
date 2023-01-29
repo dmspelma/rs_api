@@ -1,4 +1,5 @@
 # frozen_string_literal:true
+
 # require_relative 'rs_int_extend'
 
 module RsApi
@@ -18,7 +19,7 @@ module RsApi
         diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
         results << case diff <=> 0
         when -1
-          [skill_name, @player2.username, (-diff)]
+          [skill_name, @player2.username, -diff]
         when 1
           [skill_name, @player1.username, diff]
         else # 0
@@ -41,7 +42,7 @@ module RsApi
 
     def formatted_results
       f_result = results.dup
-      f_result.each_with_index do |result, i|
+      f_result.each_with_index do |result, _i|
         result[2] = result[2].delimited
       end
       f_result

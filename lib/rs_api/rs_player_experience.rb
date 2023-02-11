@@ -21,6 +21,8 @@ module RsApi
     def display
       table_data if table.rows.empty?
       puts table
+    rescue PlayerNotFound => e
+      puts "#{e} | '#{@username}' does not exist."
     end
 
     def loaded_xp
@@ -79,8 +81,6 @@ module RsApi
       raise PlayerNotFound if response.message == 'Not Found'
 
       response.body.split(/\n/).map { |item| format(item) }
-    rescue StandardError => e
-      puts "#{e.message} | Please check Username spelling."
     end
 
     def params

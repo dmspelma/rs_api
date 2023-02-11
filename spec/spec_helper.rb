@@ -16,13 +16,12 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-$LOAD_PATH << '../lib' # Setting Load Path for requiring files for spec tests
 require 'text-table'
 require 'net/http'
 require 'uri'
 require 'webmock/rspec'
-require 'rs_api'
-require_relative 'request_helper'
+require_relative '../lib/rs_api' # Better for use of requiring files within repo
+require_relative 'request_helper' # Better for use of requiring files within repo
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

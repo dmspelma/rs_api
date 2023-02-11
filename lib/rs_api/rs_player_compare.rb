@@ -40,7 +40,7 @@ module RsApi
 
     def formatted_results
       f_result = results.dup
-      f_result.each_with_index do |result, _i|
+      f_result.each do |result|
         result[2] = result[2].delimited
       end
       f_result

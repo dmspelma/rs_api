@@ -24,12 +24,14 @@ module RsApi
         @compared_players.player2.stub(:loaded_xp).and_return(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE)
         @compared_players.compare
 
-        expect(@compared_players.results).to_not eq(nil)
+        expect(@compared_players.results).to_not be_nil
         expect(@compared_players.results.length).to eq(29)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
         total_xp_diff = @compared_players.results.map { |result| result[2] }.sum
 
+        expect(@compared_players.results.class).to eq(Array)
+        expect(@compared_players.results.first.class).to eq(Array)
         expect(map_of_winners.length).to eq(1)
         expect(map_of_winners.first).to eq('TIE')
         expect(total_xp_diff).to eq(0)
@@ -44,12 +46,14 @@ module RsApi
         @compared_players.player2.stub(:loaded_xp).and_return(p2_results)
         @compared_players.compare
 
-        expect(@compared_players.results).to_not eq(nil)
+        expect(@compared_players.results).to_not be_nil
         expect(@compared_players.results.length).to eq(29)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
         total_xp_diff = @compared_players.results.map { |result| result[2] }.sum
 
+        expect(@compared_players.results.class).to eq(Array)
+        expect(@compared_players.results.first.class).to eq(Array)
         expect(map_of_winners.length).to eq(3)
         expect(map_of_winners.sort).to eq(%w[TIE player1 player2].sort)
         expect(total_xp_diff).to_not eq(0)

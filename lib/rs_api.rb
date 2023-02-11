@@ -4,7 +4,7 @@ require 'net/http'
 require 'text-table'
 require 'uri'
 require_relative 'rs_api/rs_int_extend'
-
+require_relative 'rs_api/version'
 # Base RsApi module for autoloading files
 module RsApi
   autoload :RsConstants, 'rs_api/rs_constants'

@@ -8,7 +8,7 @@ The `PlayerCompare` class is able to compare two existing places and pit their s
 #### To Install Gem:
 1. Clone Repo
 2. Navigate into repo
-3. ruby install `rs_api-1.0.1.gem`
+3. gem install `rs_api-1.0.1.gem`
 
 
 ### Additional Content

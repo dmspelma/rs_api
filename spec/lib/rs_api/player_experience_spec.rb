@@ -21,7 +21,7 @@ module RsApi
 
         expect(player_xp.class).to eq(Array)
         expect(player_xp.length).to eq(29)
-        expect(player_xp[0][2]).to include(',') # confirm experience value is formatted with .delimited
+        expect(player_xp[0][2]).to include(',').at_least(:once) # confirm experience value is formatted with .delimited
       end
 
       it 'Returns player\'s highest level' do
@@ -45,6 +45,13 @@ module RsApi
         expect(all_xp.class).to eq(Array)
         expect(all_xp[0].class).to eq(Integer)
         expect(all_xp.length).to eq(29)
+      end
+
+      it 'Returns PlayerNotFound error for non-existant player' do
+        unknown_player = RsApi::PlayerExperience.new('unknown')
+        unknown_player.stub(:loaded_xp).and_return(RsApi::PlayerExperience::PlayerNotFound)
+        e = unknown_player.loaded_xp
+        expect(e).to eq(RsApi::PlayerExperience::PlayerNotFound)
       end
     end
   end

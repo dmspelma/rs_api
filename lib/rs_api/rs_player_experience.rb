@@ -37,7 +37,7 @@ module RsApi
     def skills_at_max_level
       # Returns a array containing only skills at max_skill_level
       # SKILL_ID_CONST[i+1] | i is +1 because I don't want to load the overall skill totals
-      loaded_xp[1..].filter_map.with_index { |value, i| SKILL_ID_CONST[i + 1] if value[1] == max_skill_level }
+      loaded_xp[1..].filter_map.with_index { |value, i| SKILL_ID_CONST[i + 1].to_s.capitalize if value[1] == max_skill_level }
     end
 
     def all_skill_experience
@@ -57,9 +57,9 @@ module RsApi
 
       loaded_xp.each_with_index do |value, i|
         table.rows << if i.zero?
-          [SKILL_ID_CONST[i], "Total Level: #{value[1]}", "Total Experience: #{value[2]}"]
+          [SKILL_ID_CONST[i].to_s.capitalize, "Total Level: #{value[1]}", "Total Experience: #{value[2]}"]
         else
-          [SKILL_ID_CONST[i], "Level: #{value[1]}", "Experience: #{value[2]}"]
+          [SKILL_ID_CONST[i].to_s.capitalize, "Level: #{value[1]}", "Experience: #{value[2]}"]
         end
       end
     end

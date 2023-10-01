@@ -1,5 +1,12 @@
 # frozen_string_literal:true
 
+# Uncomment below to run Example(s) in file. May also need to for other related files.
+# require 'text-table'
+# require_relative 'rs_request'
+# require_relative 'rs_int_extend'
+# require_relative 'rs_constants'
+# require_relative 'rs_player_experience'
+
 module RsApi
   # class PlayerCompare that compares two PlayerExp skill experience.
   class PlayerCompare
@@ -15,13 +22,15 @@ module RsApi
     def compare
       SKILL_ID_CONST.each do |key, skill_name|
         diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
+        formatted_skill_name = skill_name.capitalize
+
         results << case diff <=> 0
         when -1
-          [skill_name, @player2.username, -diff]
+          [formatted_skill_name, @player2.username, -diff]
         when 1
-          [skill_name, @player1.username, diff]
+          [formatted_skill_name, @player1.username, diff]
         else # 0
-          [skill_name, 'TIE', 0]
+          [formatted_skill_name, 'TIE', 0]
         end
       end
     end
@@ -33,7 +42,7 @@ module RsApi
     end
 
     def results
-      @results ||= [] # index 0 total exp, rest is normal skills by exp
+      @results ||= [] # index 0 is total exp, rest is normal skills by exp
     end
 
     private

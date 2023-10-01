@@ -36,7 +36,8 @@ module RsApi
       25 => 'Dungeoneering',
       26 => 'Divination',
       27 => 'Invention',
-      28 => 'Archaeology'
+      28 => 'Archaeology',
+      29 => 'Necromancy'
     }.freeze
   end
 end

@@ -25,7 +25,7 @@ module RsApi
         @compared_players.compare
 
         expect(@compared_players.results).to_not be_nil
-        expect(@compared_players.results.length).to eq(29)
+        expect(@compared_players.results.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
         total_xp_diff = @compared_players.results.map { |result| result[2] }.sum
@@ -47,7 +47,7 @@ module RsApi
         @compared_players.compare
 
         expect(@compared_players.results).to_not be_nil
-        expect(@compared_players.results.length).to eq(29)
+        expect(@compared_players.results.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
         total_xp_diff = @compared_players.results.map { |result| result[2] }.sum

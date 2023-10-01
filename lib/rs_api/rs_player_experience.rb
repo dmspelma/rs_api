@@ -26,7 +26,7 @@ module RsApi
     end
 
     def loaded_xp
-      @loaded_xp ||= parsed[0..28]
+      @loaded_xp ||= parsed[0..29]
     end
 
     def max_skill_level

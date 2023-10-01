@@ -20,7 +20,7 @@ module RsApi
         player_xp = @player.loaded_xp
 
         expect(player_xp.class).to eq(Array)
-        expect(player_xp.length).to eq(29)
+        expect(player_xp.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
         expect(player_xp[0][2]).to include(',').at_least(:once) # confirm experience value is formatted with .delimited
       end
 
@@ -44,7 +44,7 @@ module RsApi
 
         expect(all_xp.class).to eq(Array)
         expect(all_xp[0].class).to eq(Integer)
-        expect(all_xp.length).to eq(29)
+        expect(all_xp.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
       end
 
       it 'Returns PlayerNotFound error for non-existant player' do

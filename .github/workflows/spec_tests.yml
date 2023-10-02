@@ -1,0 +1,42 @@
+name: RSpec Tests
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+  pull_request:
+    branches:
+      - '*'
+      - '!master'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.1.1
+
+    - name: Install Dependencies
+      run: bundle install
+
+    - name: Run RSpec Tests
+      run: rspec .
+
+    - name: Fail if test errors
+      run: |
+        set -e
+        rspec .
+        result=$?
+        if [ $result -ne 0 ]; then
+          echo "::error::Rspec test failures. Please check or fix tests before merging!"
+          exit 1
+        fi

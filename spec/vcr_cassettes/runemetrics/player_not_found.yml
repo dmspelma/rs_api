@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:10:10 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=17BC7D6BF6C06D9CCD627424D9F14619; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=K1fnqedmwMDgtrIFRFJWID64IqLjjJiClfZGCnzRfN8-1696363810-0-AWIWlx02yY6lETKISt1J5Vi15/sX/fKjEN+W0ZDT9VDiKx069jEOBERLcO4JmObmqNuTIOOznfu8UJbRs8VDQBzQRUFLSYybz7RT2f4TPUbh;
+        path=/; expires=Tue, 03-Oct-23 20:40:10 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Location:
+      - https://www.runescape.com/unavailable
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107d372f9d4dbb6-LAX
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 03 Oct 2023 20:10:10 GMT
+recorded_with: VCR 6.2.0

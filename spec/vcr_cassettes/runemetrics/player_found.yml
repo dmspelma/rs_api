@@ -1,0 +1,1279 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:13 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=AFF67DEE6BB70EF939AE63C451C8A1EF; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=HOuseu28HVzM5HFwX.AW_7cxEHHiYEe.4eRZiF5jEIo-1696365673-0-AYiv5fBRVmqwphpCGIUpEO9WnRODawSL9vOiEZ8cQf378+wLSiua7BOCEm0NuE/sD4/TDOe1z0mvl3IJSLPa2+N3scdWqtfRpMoh8G0avMC0;
+        path=/; expires=Tue, 03-Oct-23 21:11:13 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81080115fa872f64-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":0,"totalXp":28399881,"averageXpGain":28317,"totalGain":339808,"monthData":[{"xpGain":15588,"timestamp":1667675840137,"rank":103405},{"xpGain":0,"timestamp":1670103404433,"rank":0},{"xpGain":64781,"timestamp":1674773418285,"rank":75505},{"xpGain":0,"timestamp":1675460204433,"rank":0},{"xpGain":0,"timestamp":1677879404433,"rank":0},{"xpGain":0,"timestamp":1680554204433,"rank":0},{"xpGain":0,"timestamp":1683146204433,"rank":0},{"xpGain":0,"timestamp":1685824604433,"rank":0},{"xpGain":0,"timestamp":1688416604433,"rank":0},{"xpGain":0,"timestamp":1691095004433,"rank":0},{"xpGain":244879,"timestamp":1695750737575,"rank":23451},{"xpGain":14560,"timestamp":1696293950489,"rank":18158}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:13 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:20 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=56BEE61840B3C67945ADF1AC1B2B74B6; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=VHNXTrKN8Nq.9GXn0KVJxdUd68GC4SxWOhI6lY.K7OY-1696365680-0-AWnMiMQcF8LO3zI2boZeRNEpucuzgCHuibKJ7kLw5rjOuW7SApqs6HQ3NdVh7FKW2YFK6NNhX9ss1CtVimbdQf4934PDDypF1YdGI9LVa8Ss;
+        path=/; expires=Tue, 03-Oct-23 21:11:20 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81080132fba57c61-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":1,"totalXp":13080783,"averageXpGain":376,"totalGain":4512,"monthData":[{"xpGain":0,"timestamp":1667511411774,"rank":0},{"xpGain":0,"timestamp":1670103411774,"rank":0},{"xpGain":3324,"timestamp":1674067334212,"rank":135883},{"xpGain":0,"timestamp":1675460211774,"rank":0},{"xpGain":0,"timestamp":1677879411774,"rank":0},{"xpGain":0,"timestamp":1680554211774,"rank":0},{"xpGain":0,"timestamp":1683146211774,"rank":0},{"xpGain":0,"timestamp":1685824611774,"rank":0},{"xpGain":0,"timestamp":1688416611774,"rank":0},{"xpGain":0,"timestamp":1691095011774,"rank":0},{"xpGain":1188,"timestamp":1695750737577,"rank":114554},{"xpGain":0,"timestamp":1696365411774,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:20 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:27 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=16220843F362D11A21B36083291D8333; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=KxBYR5PXgCXZ6OnbUv.KcL54OTTT9xJtDVS26tbI4uo-1696365687-0-ATp4fVJD7JdFUkf6WSbn4Jiw5BrlqYqZGcyLXC0jyXf9TTPDj5LuKihbUb62u/j6MpRVfRPdap1h+BPcqlNzTtHxu0h8Gt9F7zu5gl/gaHuu;
+        path=/; expires=Tue, 03-Oct-23 21:11:27 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810801612efd14f0-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":2,"totalXp":13466140,"averageXpGain":900,"totalGain":10808,"monthData":[{"xpGain":0,"timestamp":1667511418331,"rank":0},{"xpGain":0,"timestamp":1670103418331,"rank":0},{"xpGain":9440,"timestamp":1674524945010,"rank":113609},{"xpGain":0,"timestamp":1675460218331,"rank":0},{"xpGain":0,"timestamp":1677879418331,"rank":0},{"xpGain":0,"timestamp":1680554218331,"rank":0},{"xpGain":0,"timestamp":1683146218331,"rank":0},{"xpGain":0,"timestamp":1685824618331,"rank":0},{"xpGain":0,"timestamp":1688416618331,"rank":0},{"xpGain":0,"timestamp":1691095018331,"rank":0},{"xpGain":1368,"timestamp":1695750737579,"rank":110895},{"xpGain":0,"timestamp":1696365418331,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:27 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:30 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=411FE882C022584AAF3433135F9146BD; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=D9Pr6ytp4QZt847eMQYqj_iUf90PwbnMf96fJm9UuDU-1696365690-0-ASKBVy2ev1NioudTnJDBPLC0UAss2WAJOFLxCDLnommKSfPO3eCYVdvj3zhFpHsWpDXPSdXFeXVivqtKIe2LVanMLarToPsoUNUMEjw+dRzF;
+        path=/; expires=Tue, 03-Oct-23 21:11:30 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108018ada022a9e-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":3,"totalXp":32145968,"averageXpGain":604025,"totalGain":7248306,"monthData":[{"xpGain":5143,"timestamp":1667675840139,"rank":166773},{"xpGain":0,"timestamp":1670103426801,"rank":0},{"xpGain":106300,"timestamp":1674773418288,"rank":99970},{"xpGain":0,"timestamp":1675460226801,"rank":0},{"xpGain":0,"timestamp":1677879426801,"rank":0},{"xpGain":0,"timestamp":1680554226801,"rank":0},{"xpGain":0,"timestamp":1683146226801,"rank":0},{"xpGain":0,"timestamp":1685824626801,"rank":0},{"xpGain":0,"timestamp":1688416626801,"rank":0},{"xpGain":0,"timestamp":1691095026801,"rank":0},{"xpGain":5094166,"timestamp":1696039014651,"rank":9277},{"xpGain":2042697,"timestamp":1696293950491,"rank":1683}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:30 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:35 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=F433365747FAC04A3EAFCF55569423FF; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=pCET6u_QWKeE4f6zzY4hBu2cr5RbQxoDaKQZoMFgiDA-1696365695-0-AUF2drfOGwM0f4ItIlJlbNhFeRKvFYkvnNvN7VJzcBPT9LnIBIMJD9Uj0nrnDKDtkhuEVjDfQzRfNdRAfdS4gwtlf4HYb6nXknVJhiJ7zs6m;
+        path=/; expires=Tue, 03-Oct-23 21:11:35 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108019dde8f7bf5-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":4,"totalXp":19351705,"averageXpGain":5547,"totalGain":66566,"monthData":[{"xpGain":0,"timestamp":1667511434403,"rank":0},{"xpGain":0,"timestamp":1670103434403,"rank":0},{"xpGain":65378,"timestamp":1674179744630,"rank":79429},{"xpGain":0,"timestamp":1675460234403,"rank":0},{"xpGain":0,"timestamp":1677879434403,"rank":0},{"xpGain":0,"timestamp":1680554234403,"rank":0},{"xpGain":0,"timestamp":1683146234403,"rank":0},{"xpGain":0,"timestamp":1685824634403,"rank":0},{"xpGain":0,"timestamp":1688416634403,"rank":0},{"xpGain":0,"timestamp":1691095034403,"rank":0},{"xpGain":1188,"timestamp":1695750737583,"rank":96909},{"xpGain":0,"timestamp":1696365434403,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:35 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:37 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=0A4AB270F6CF75D2762BED35E15432DF; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=_Ze6CRtEYbxB5kGAhEFl9bFgNCqvS4C2o5WETlWJWFk-1696365697-0-AalkFY4zcqY5+CCGj7fE1r9z4xeN4E4ubqZ3MtsUVxsNxpKM0Kkt/g7QJAxNirsMYtzh27GmEtkMlpIEVzU2+Y/q/ngZqUwXFZ6Pyzu44aiY;
+        path=/; expires=Tue, 03-Oct-23 21:11:37 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810801bd2a087cd7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":5,"totalXp":15560183,"averageXpGain":27717,"totalGain":332613,"monthData":[{"xpGain":0,"timestamp":1667511441607,"rank":0},{"xpGain":0,"timestamp":1670103441607,"rank":0},{"xpGain":140697,"timestamp":1674942098344,"rank":71188},{"xpGain":0,"timestamp":1675460241607,"rank":0},{"xpGain":0,"timestamp":1677879441607,"rank":0},{"xpGain":0,"timestamp":1680554241607,"rank":0},{"xpGain":0,"timestamp":1683146241607,"rank":0},{"xpGain":0,"timestamp":1685824641607,"rank":0},{"xpGain":0,"timestamp":1688416641607,"rank":0},{"xpGain":0,"timestamp":1691095041607,"rank":0},{"xpGain":191916,"timestamp":1696032123444,"rank":45133},{"xpGain":0,"timestamp":1696365441607,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:37 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:43 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=0349D7A61B4B34D899C32C8202802BC1; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=_9wvazRN.YdeJYxRuz2UtcXlLOa8ALrKXU2Vs_.AR.o-1696365703-0-AQN+BNxmO7j2Z1B95NZ1NajOpjS1uc9TfdYjOYT5/imWYoy28OHeOdT4+/jI9+hKPM9pI+6wn8tgI0hUw2L4gnf8N/9H2YYsKH6lv1oyggsP;
+        path=/; expires=Tue, 03-Oct-23 21:11:43 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810801c8bfb60fb9-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":6,"totalXp":27388588,"averageXpGain":38433,"totalGain":461205,"monthData":[{"xpGain":0,"timestamp":1667511447837,"rank":0},{"xpGain":0,"timestamp":1670103447837,"rank":0},{"xpGain":431138,"timestamp":1674773418291,"rank":52512},{"xpGain":0,"timestamp":1675460247837,"rank":0},{"xpGain":0,"timestamp":1677879447837,"rank":0},{"xpGain":0,"timestamp":1680554247837,"rank":0},{"xpGain":0,"timestamp":1683146247837,"rank":0},{"xpGain":0,"timestamp":1685824647837,"rank":0},{"xpGain":0,"timestamp":1688416647837,"rank":0},{"xpGain":0,"timestamp":1691095047837,"rank":0},{"xpGain":28806,"timestamp":1696032123445,"rank":71838},{"xpGain":1261,"timestamp":1696210811858,"rank":39992}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:43 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:49 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=B503BAB4BD3ECF4BE31CF776BE4AF325; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=5rJnmePkSe3UOx9pPMlRCGRAYpIyTdwfjlM.VCG4nv4-1696365709-0-AeiRZi3mLUM4RwTs3sPhoXx2+D750ZFcT/AIERtN0q+U13xY3DQ841BhHsnKIgO5kxCuHnWoBdew1AkTx74JTveW8H+Bof/cyoah08j7r9Uv;
+        path=/; expires=Tue, 03-Oct-23 21:11:49 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810801ec9afc0fe7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":7,"totalXp":15441251,"averageXpGain":70263,"totalGain":843161,"monthData":[{"xpGain":0,"timestamp":1667511454857,"rank":0},{"xpGain":0,"timestamp":1670103454857,"rank":0},{"xpGain":840017,"timestamp":1674524945020,"rank":20250},{"xpGain":0,"timestamp":1675460254857,"rank":0},{"xpGain":0,"timestamp":1677879454857,"rank":0},{"xpGain":0,"timestamp":1680554254857,"rank":0},{"xpGain":0,"timestamp":1683146254857,"rank":0},{"xpGain":0,"timestamp":1685824654857,"rank":0},{"xpGain":0,"timestamp":1688416654857,"rank":0},{"xpGain":0,"timestamp":1691095054857,"rank":0},{"xpGain":3144,"timestamp":1695750737589,"rank":105666},{"xpGain":0,"timestamp":1696365454857,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:49 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:54 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=BE9A419A3EC2475811D16A3CA0CC7251; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=rcq8NQmq3vvUCql4jVQW0yvKlN2BoA5OLDF7hq2eYQU-1696365714-0-ARwmsXkublXEuzvqfYfZyZOm4DcEo+rmLS1w2mpgl7sxlac28irNWegUN29t0qiLMzzSSmtjHIgw4UMtQCM4E74xzlMM7Jr7r0o9oAkObC+Y;
+        path=/; expires=Tue, 03-Oct-23 21:11:54 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81080214db550915-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":8,"totalXp":17257659,"averageXpGain":46857,"totalGain":562288,"monthData":[{"xpGain":0,"timestamp":1667511457543,"rank":0},{"xpGain":0,"timestamp":1670103457543,"rank":0},{"xpGain":155592,"timestamp":1674524945022,"rank":74785},{"xpGain":0,"timestamp":1675460257543,"rank":0},{"xpGain":0,"timestamp":1677879457543,"rank":0},{"xpGain":0,"timestamp":1680554257543,"rank":0},{"xpGain":0,"timestamp":1683146257543,"rank":0},{"xpGain":0,"timestamp":1685824657543,"rank":0},{"xpGain":0,"timestamp":1688416657543,"rank":0},{"xpGain":0,"timestamp":1691095057543,"rank":0},{"xpGain":178131,"timestamp":1696077132011,"rank":49862},{"xpGain":228565,"timestamp":1696342154158,"rank":7043}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:54 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:41:59 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=4B0263576C89879FAFB8B0857AFA8977; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=.aNtGtFByHyV82JQZxzJYbOaNZO1C9EG.wP8W_Op6XY-1696365719-0-AXGotvsZ9r7EPK2QG27ycIAt/ThXCJKOKvlTMt3E0gNO+dFaRpLU66KZkhLF4jHG2ZUJZT4sdw4Jj50ve94Q0BwssPcfsM+F2kyjg0C5XR3u;
+        path=/; expires=Tue, 03-Oct-23 21:11:59 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802363ba42b76-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":9,"totalXp":22897236,"averageXpGain":31892,"totalGain":382708,"monthData":[{"xpGain":0,"timestamp":1667511463596,"rank":0},{"xpGain":0,"timestamp":1670103463596,"rank":0},{"xpGain":336520,"timestamp":1674067334228,"rank":33479},{"xpGain":0,"timestamp":1675460263596,"rank":0},{"xpGain":0,"timestamp":1677879463596,"rank":0},{"xpGain":0,"timestamp":1680554263596,"rank":0},{"xpGain":0,"timestamp":1683146263596,"rank":0},{"xpGain":0,"timestamp":1685824663596,"rank":0},{"xpGain":0,"timestamp":1688416663596,"rank":0},{"xpGain":0,"timestamp":1691095063596,"rank":0},{"xpGain":46188,"timestamp":1695750737593,"rank":49665},{"xpGain":0,"timestamp":1696365463596,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:41:59 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:04 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=2842C42866F6DFEBC2880917C50155D4; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=YJmJYRRWX78lLHs9GKth4M92WCn0O781lecnyvalHtg-1696365724-0-AYA1lqRpCso/116rsHEo+lF6cuELHG+aenOlFVsftrbkRbbzVpHMKsz/a+bfuD9rmRKlUqkdFoU4qMvc/dZxvf9WV37JOxhN/LANJS/zX8KU;
+        path=/; expires=Tue, 03-Oct-23 21:12:04 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108025109757e9b-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":10,"totalXp":17341968,"averageXpGain":52278,"totalGain":627341,"monthData":[{"xpGain":0,"timestamp":1667511466236,"rank":0},{"xpGain":0,"timestamp":1670103466236,"rank":0},{"xpGain":332117,"timestamp":1674773418296,"rank":79783},{"xpGain":0,"timestamp":1675460266236,"rank":0},{"xpGain":0,"timestamp":1677879466236,"rank":0},{"xpGain":0,"timestamp":1680554266236,"rank":0},{"xpGain":0,"timestamp":1683146266236,"rank":0},{"xpGain":0,"timestamp":1685824666236,"rank":0},{"xpGain":0,"timestamp":1688416666236,"rank":0},{"xpGain":0,"timestamp":1691095066236,"rank":0},{"xpGain":240224,"timestamp":1695750737595,"rank":64747},{"xpGain":55000,"timestamp":1696210811866,"rank":35884}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:04 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:10 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=465DE1C44AB7797906FEB907E044FE41; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=jRwQg3VJSsOafUk.ybxMAjD.ptb8xY0u_rS1v1FnvZw-1696365730-0-AYhQRSdulMt1m+Lbo5iE9pep1EHF7U5Qfym5Vw/W+zKqsvy+c+z7M2EYwZ/e+rAH2NDnMl9ZPLTewfccSYZgjnO2m4WToaV9egCBGhIKfUTM;
+        path=/; expires=Tue, 03-Oct-23 21:12:10 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802744b010fba-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":11,"totalXp":19036470,"averageXpGain":157671,"totalGain":1892060,"monthData":[{"xpGain":0,"timestamp":1667511470105,"rank":0},{"xpGain":0,"timestamp":1670103470105,"rank":0},{"xpGain":1629290,"timestamp":1674942098352,"rank":14528},{"xpGain":0,"timestamp":1675460270105,"rank":0},{"xpGain":0,"timestamp":1677879470105,"rank":0},{"xpGain":0,"timestamp":1680554270105,"rank":0},{"xpGain":0,"timestamp":1683146270105,"rank":0},{"xpGain":0,"timestamp":1685824670105,"rank":0},{"xpGain":0,"timestamp":1688416670105,"rank":0},{"xpGain":0,"timestamp":1691095070105,"rank":0},{"xpGain":217770,"timestamp":1695750737597,"rank":31661},{"xpGain":45000,"timestamp":1696210811868,"rank":14887}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:10 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:13 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=C9607C46495063D4488E33513F7CF3FD; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=RQunrRAf_TLA2Q1UPpRxUzdupx1pmshYzC8ljtD.fJo-1696365733-0-AU8QhWLRSjW7lL0kdZSj26JC61zZdleejIcQyxYjGeT263xABj55A6rM0rI0nvHx2x1w5xSqY+LGPiCF6C3oklYuGRbmQCROfwe/hMxAGU7y;
+        path=/; expires=Tue, 03-Oct-23 21:12:13 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108029779a52aa1-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":12,"totalXp":14424650,"averageXpGain":89543,"totalGain":1074527,"monthData":[{"xpGain":0,"timestamp":1667511471750,"rank":0},{"xpGain":0,"timestamp":1670103471750,"rank":0},{"xpGain":921267,"timestamp":1674524945030,"rank":23772},{"xpGain":0,"timestamp":1675460271750,"rank":0},{"xpGain":0,"timestamp":1677879471750,"rank":0},{"xpGain":0,"timestamp":1680554271750,"rank":0},{"xpGain":0,"timestamp":1683146271750,"rank":0},{"xpGain":0,"timestamp":1685824671750,"rank":0},{"xpGain":0,"timestamp":1688416671750,"rank":0},{"xpGain":0,"timestamp":1691095071750,"rank":0},{"xpGain":142698,"timestamp":1696080620361,"rank":41541},{"xpGain":10562,"timestamp":1696201452024,"rank":25487}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:13 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:18 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=B374EFDC07CFA482BFFB391C01B234AD; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=367OOIMAFF8YHpbdfJXXv4Bg2Iwf5TWtG3GviidOu6Q-1696365738-0-AXC9FUJaCv/Pl9F83rgtVLsU+hQPp561U5uySxfAc/Zy+IczrkdcI7scbMnLWpMIuVuf36aukhS1GY3lZt0jIW+QdZDp3sVUQtnDLhqatli9;
+        path=/; expires=Tue, 03-Oct-23 21:12:18 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802ac88971015-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":13,"totalXp":16523207,"averageXpGain":184507,"totalGain":2214095,"monthData":[{"xpGain":0,"timestamp":1667511473507,"rank":0},{"xpGain":0,"timestamp":1670103473507,"rank":0},{"xpGain":1864257,"timestamp":1674949874110,"rank":12746},{"xpGain":16490,"timestamp":1675212593681,"rank":121511},{"xpGain":0,"timestamp":1677879473507,"rank":0},{"xpGain":0,"timestamp":1680554273507,"rank":0},{"xpGain":0,"timestamp":1683146273507,"rank":0},{"xpGain":0,"timestamp":1685824673507,"rank":0},{"xpGain":0,"timestamp":1688416673507,"rank":0},{"xpGain":0,"timestamp":1691095073507,"rank":0},{"xpGain":308348,"timestamp":1695750737601,"rank":21822},{"xpGain":25000,"timestamp":1696210811872,"rank":15418}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:18 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:20 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=DF3CF64A957413418A2A35AD53B78B11; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=N8FOrvGmgffc26j5ivX_2YXcRkxL9.Dzoj9kqQHG6PE-1696365740-0-AXeLRpu5FHFCcYOjy0VIPS9zcosI91Kv1BZxete5Fo5tZk1ArnPxW+R/+6icoUJD8Sq6X52n5D3UyUDRGLn1HHFUJEg20jkPS93eqw+8sO/j;
+        path=/; expires=Tue, 03-Oct-23 21:12:20 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802cbe8607d59-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":14,"totalXp":18688562,"averageXpGain":347918,"totalGain":4175024,"monthData":[{"xpGain":0,"timestamp":1667511479013,"rank":0},{"xpGain":0,"timestamp":1670103479013,"rank":0},{"xpGain":4170910,"timestamp":1674773418302,"rank":11096},{"xpGain":0,"timestamp":1675460279013,"rank":0},{"xpGain":0,"timestamp":1677879479013,"rank":0},{"xpGain":0,"timestamp":1680554279013,"rank":0},{"xpGain":0,"timestamp":1683146279013,"rank":0},{"xpGain":0,"timestamp":1685824679013,"rank":0},{"xpGain":0,"timestamp":1688416679013,"rank":0},{"xpGain":0,"timestamp":1691095079013,"rank":0},{"xpGain":0,"timestamp":1693773479013,"rank":0},{"xpGain":4114,"timestamp":1696170514866,"rank":43475}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:20 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:22 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=C460A1DB21E6BF887333A79FE71A1159; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=1RjD0HwWeK.L5TegtSQsmZOQONmaGwPLIlC3BiyFutk-1696365742-0-Ae5iYe+z5dfZp938ag3JLcp2YUxX2G/qG5/yYFNccfL9zv/tUB0+NK0rUVRvteiq//fw0q/3dFZUbKmXzjls1/QzUUBmBjgcHSfVSJI5ComE;
+        path=/; expires=Tue, 03-Oct-23 21:12:22 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802d6c95a7d0f-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":15,"totalXp":14745776,"averageXpGain":18908,"totalGain":226903,"monthData":[{"xpGain":0,"timestamp":1667511486315,"rank":0},{"xpGain":0,"timestamp":1670103486315,"rank":0},{"xpGain":0,"timestamp":1672781886315,"rank":0},{"xpGain":0,"timestamp":1675460286315,"rank":0},{"xpGain":0,"timestamp":1677879486315,"rank":0},{"xpGain":0,"timestamp":1680554286315,"rank":0},{"xpGain":0,"timestamp":1683146286315,"rank":0},{"xpGain":0,"timestamp":1685824686315,"rank":0},{"xpGain":0,"timestamp":1688416686315,"rank":0},{"xpGain":0,"timestamp":1691095086315,"rank":0},{"xpGain":145041,"timestamp":1696039014666,"rank":56632},{"xpGain":81862,"timestamp":1696278156753,"rank":15213}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:22 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=16
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:28 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=E3843C800B1737AAD3EF78DA9AD44448; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=YtljZbNLqgNimIK4OHhQLgezjSiuWDWIObdMfirdeSY-1696365748-0-AZnkc/Wv0KPiIKEGxSWUqYsXVOKHXTx5EVLicocaOrSB/sHHjkPqo2yoKBHUex3hAo2uwPlA3sLRjjo+ehQLPoYQL/lkd5Vf5ElnbPgyJ21E;
+        path=/; expires=Tue, 03-Oct-23 21:12:28 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810802e11cd25220-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":16,"totalXp":16506675,"averageXpGain":238320,"totalGain":2859843,"monthData":[{"xpGain":0,"timestamp":1667511748493,"rank":0},{"xpGain":0,"timestamp":1670103748493,"rank":0},{"xpGain":0,"timestamp":1672782148493,"rank":0},{"xpGain":0,"timestamp":1675460548493,"rank":0},{"xpGain":0,"timestamp":1677879748493,"rank":0},{"xpGain":0,"timestamp":1680554548493,"rank":0},{"xpGain":0,"timestamp":1683146548493,"rank":0},{"xpGain":0,"timestamp":1685824948493,"rank":0},{"xpGain":0,"timestamp":1688416948493,"rank":0},{"xpGain":0,"timestamp":1691095348493,"rank":0},{"xpGain":2383011,"timestamp":1696080620367,"rank":8629},{"xpGain":476832,"timestamp":1696342154174,"rank":4560}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:28 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:33 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=27835BD306F343DFD8C21D714786BA7C; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=mc_7TbUyEri210qlwGxqAlrBbcjK1sRLyUBfa5pyMiU-1696365753-0-Afsay7n6o1MHtMgfUNeb0ZhEWoQtLtMF79fc4WQW1qYDXcL+tn9Y5LqY+LJr+mf3IulHmnYdILTjvgF8Uhx5t52jqwaCsP2hD0Y9PCqU6W3R;
+        path=/; expires=Tue, 03-Oct-23 21:12:33 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810803095dfddb86-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":17,"totalXp":13496903,"averageXpGain":135,"totalGain":1620,"monthData":[{"xpGain":0,"timestamp":1667511753723,"rank":0},{"xpGain":0,"timestamp":1670103753723,"rank":0},{"xpGain":0,"timestamp":1672782153723,"rank":0},{"xpGain":0,"timestamp":1675460553723,"rank":0},{"xpGain":0,"timestamp":1677879753723,"rank":0},{"xpGain":0,"timestamp":1680554553723,"rank":0},{"xpGain":0,"timestamp":1683146553723,"rank":0},{"xpGain":0,"timestamp":1685824953723,"rank":0},{"xpGain":0,"timestamp":1688416953723,"rank":0},{"xpGain":0,"timestamp":1691095353723,"rank":0},{"xpGain":1620,"timestamp":1695750737609,"rank":93160},{"xpGain":0,"timestamp":1696365753723,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:33 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:40 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=E3428B7E1C4530E64FFCD6B8449B5BFC; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=.xVIGFrq0RPU8m6FjVZEI_G2boCRkFKPPtFyMMxOirI-1696365760-0-Ac0ws6/dnEtoG7Cus09FgLwow0gx0AElSv4ubfm0DDUXJHL7huMpSEFyo6CRrrwkMeoJWaJ6US2X16Ozc0+dWIX4DhRNYwKCAOeQLvR+Dfux;
+        path=/; expires=Tue, 03-Oct-23 21:12:40 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81080329fab82f0e-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":18,"totalXp":35212350,"averageXpGain":904942,"totalGain":10859313,"monthData":[{"xpGain":0,"timestamp":1667511760321,"rank":0},{"xpGain":0,"timestamp":1670103760321,"rank":0},{"xpGain":0,"timestamp":1672782160321,"rank":0},{"xpGain":0,"timestamp":1675460560321,"rank":0},{"xpGain":0,"timestamp":1677879760321,"rank":0},{"xpGain":0,"timestamp":1680554560321,"rank":0},{"xpGain":0,"timestamp":1683146560321,"rank":0},{"xpGain":0,"timestamp":1685824960321,"rank":0},{"xpGain":0,"timestamp":1688416960321,"rank":0},{"xpGain":0,"timestamp":1691095360321,"rank":0},{"xpGain":9557636,"timestamp":1696015576653,"rank":2902},{"xpGain":1301677,"timestamp":1696293950516,"rank":2966}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:40 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=19
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:44 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=44CE2DBA12C0AD335B7FEEEF499B751A; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=7cp0EBjRNC_W9YRuNENml7dpV52Q_vNH_3ea.2DRRgI-1696365764-0-ATn49OgqrFAj/8vVnGrw9wEcDyr0XNnPsKlQoIlTolVSrEw0YYpeYnSpxotqkBgGFwhC7Khd3ANgIjv2429z52lP0dXuMhHcWIFivtTyDa8M;
+        path=/; expires=Tue, 03-Oct-23 21:12:44 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81080352fa7c2b97-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":19,"totalXp":17616755,"averageXpGain":13637,"totalGain":163647,"monthData":[{"xpGain":0,"timestamp":1667511763940,"rank":0},{"xpGain":0,"timestamp":1670103763940,"rank":0},{"xpGain":0,"timestamp":1672782163940,"rank":0},{"xpGain":0,"timestamp":1675460563940,"rank":0},{"xpGain":0,"timestamp":1677879763940,"rank":0},{"xpGain":0,"timestamp":1680554563940,"rank":0},{"xpGain":0,"timestamp":1683146563940,"rank":0},{"xpGain":0,"timestamp":1685824963940,"rank":0},{"xpGain":0,"timestamp":1688416963940,"rank":0},{"xpGain":0,"timestamp":1691095363940,"rank":0},{"xpGain":91408,"timestamp":1695750737613,"rank":85741},{"xpGain":72239,"timestamp":1696210811882,"rank":38411}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:44 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:53 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=E4DA3B7F00F7B784B79A5B4BFA7DA68D; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=_MeYDuq8II2zpuNxZBSfyBXhJJlGrju2dgAkl5OSXas-1696365773-0-AV3IiQhuf4AU2xrRjtjsd7F6jW7rNTthCe9yPFwLSqo+KV3y+APqFzuroFcov1NxipZRqGepF9zLSu/InMVgrPs/O7uL9n2xh9qmAjzjlgv7;
+        path=/; expires=Tue, 03-Oct-23 21:12:53 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108036a090c1035-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":20,"totalXp":17748252,"averageXpGain":296641,"totalGain":3559692,"monthData":[{"xpGain":0,"timestamp":1667511773431,"rank":0},{"xpGain":0,"timestamp":1670103773431,"rank":0},{"xpGain":12925,"timestamp":1674524945036,"rank":116988},{"xpGain":0,"timestamp":1675460573431,"rank":0},{"xpGain":0,"timestamp":1677879773431,"rank":0},{"xpGain":0,"timestamp":1680554573431,"rank":0},{"xpGain":0,"timestamp":1683146573431,"rank":0},{"xpGain":0,"timestamp":1685824973431,"rank":0},{"xpGain":0,"timestamp":1688416973431,"rank":0},{"xpGain":0,"timestamp":1691095373431,"rank":0},{"xpGain":3486767,"timestamp":1695851140972,"rank":4797},{"xpGain":60000,"timestamp":1696210811884,"rank":13352}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:53 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:42:58 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=5B4963EE9257F77F8FAC317A76CF878E; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=QBF4YBopkUD5YFZO2zTLazpsxio9yJpJyBb5LMthStc-1696365778-0-ARwcf0qRJVdyEb3/fnnzwO/itKKLq/koficl64Ams4fuyoEo0lSgwyxX94oR2cC2iGPDC+ZaUnpUYOIw9bohuh5rIOt4i8Z3Qw0MEISYk4UT;
+        path=/; expires=Tue, 03-Oct-23 21:12:58 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810803a5887ddb56-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":21,"totalXp":13437005,"averageXpGain":16757,"totalGain":201094,"monthData":[{"xpGain":0,"timestamp":1667511778472,"rank":0},{"xpGain":0,"timestamp":1670103778472,"rank":0},{"xpGain":0,"timestamp":1672782178472,"rank":0},{"xpGain":0,"timestamp":1675460578472,"rank":0},{"xpGain":0,"timestamp":1677879778472,"rank":0},{"xpGain":0,"timestamp":1680554578472,"rank":0},{"xpGain":0,"timestamp":1683146578472,"rank":0},{"xpGain":0,"timestamp":1685824978472,"rank":0},{"xpGain":0,"timestamp":1688416978472,"rank":0},{"xpGain":0,"timestamp":1691095378472,"rank":0},{"xpGain":201094,"timestamp":1696032123464,"rank":23494},{"xpGain":0,"timestamp":1696365778472,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:42:58 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:05 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=EDBE97B54DF97AFFBFC063C265219DE1; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=PsGS.bNu3DVJ2AWN4j.99B3sQYHPNU0WFPskp0Tdqn0-1696365785-0-AXw8lVrm+8iP0DmrF/P1anHsjYwW96RYVEuuSGZagM3uoB11alCFCkp21dfi0ZkvHhwEENmUMYBXLp2gklqt0orZiBamTlnVGGKDxldqsD/O;
+        path=/; expires=Tue, 03-Oct-23 21:13:05 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810803c4fe507ec5-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":22,"totalXp":14511638,"averageXpGain":75388,"totalGain":904657,"monthData":[{"xpGain":0,"timestamp":1667511785730,"rank":0},{"xpGain":0,"timestamp":1670103785730,"rank":0},{"xpGain":0,"timestamp":1672782185730,"rank":0},{"xpGain":0,"timestamp":1675460585730,"rank":0},{"xpGain":0,"timestamp":1677879785730,"rank":0},{"xpGain":0,"timestamp":1680554585730,"rank":0},{"xpGain":0,"timestamp":1683146585730,"rank":0},{"xpGain":0,"timestamp":1685824985730,"rank":0},{"xpGain":0,"timestamp":1688416985730,"rank":0},{"xpGain":0,"timestamp":1691095385730,"rank":0},{"xpGain":549778,"timestamp":1696080620377,"rank":20616},{"xpGain":354879,"timestamp":1696210811888,"rank":4185}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:05 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:20 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=C348848328BAA38E5C6DB41A7E6D77E6; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=toSun9ZlDliDf6Am_x062alz87YdtWUMEsiCuO_vA0U-1696365800-0-AVHdyt7lNxPhRZxtQPc4hbD3d53WCXnoMUzjg/+PQa4trJd86mjWqY9JECmu90QtLvEokym9O1bPuJtG6fE9EWRO1+W16RRVKXozVjK75dmW;
+        path=/; expires=Tue, 03-Oct-23 21:13:20 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810803f1ca872f1b-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":23,"totalXp":13492522,"averageXpGain":18360,"totalGain":220322,"monthData":[{"xpGain":0,"timestamp":1667511799942,"rank":0},{"xpGain":0,"timestamp":1670103799942,"rank":0},{"xpGain":0,"timestamp":1672782199942,"rank":0},{"xpGain":0,"timestamp":1675460599942,"rank":0},{"xpGain":0,"timestamp":1677879799942,"rank":0},{"xpGain":0,"timestamp":1680554599942,"rank":0},{"xpGain":0,"timestamp":1683146599942,"rank":0},{"xpGain":0,"timestamp":1685824999942,"rank":0},{"xpGain":0,"timestamp":1688416999942,"rank":0},{"xpGain":0,"timestamp":1691095399942,"rank":0},{"xpGain":218261,"timestamp":1696039014679,"rank":23042},{"xpGain":2061,"timestamp":1696293950526,"rank":31060}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:20 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:28 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=B54AA130954EC958AE4B603D92157961; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=8I3EtgluRgk41qYIM5wjG70ZSZ4CBbEtytbsPZINVB4-1696365808-0-AX6El2vM27ehuc9ecG45UZo1wvb4QGjqAb1TArLFmds8mYfWqX3X90URYh2Agk8VTq9NOeidGbtQzMJtoT0bEev+G6Ahu5g/bM+lrWiohlPN;
+        path=/; expires=Tue, 03-Oct-23 21:13:28 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108044b4f987bef-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":24,"totalXp":30422738,"averageXpGain":1184128,"totalGain":14209542,"monthData":[{"xpGain":0,"timestamp":1667511807989,"rank":0},{"xpGain":0,"timestamp":1670103807989,"rank":0},{"xpGain":13777903,"timestamp":1674856617875,"rank":3107},{"xpGain":42414,"timestamp":1675212593683,"rank":101833},{"xpGain":0,"timestamp":1677879807989,"rank":0},{"xpGain":0,"timestamp":1680554607989,"rank":0},{"xpGain":0,"timestamp":1683146607989,"rank":0},{"xpGain":0,"timestamp":1685825007989,"rank":0},{"xpGain":0,"timestamp":1688417007989,"rank":0},{"xpGain":0,"timestamp":1691095407989,"rank":0},{"xpGain":389225,"timestamp":1695750737623,"rank":30550},{"xpGain":0,"timestamp":1696365807989,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:28 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:35 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=C02E9F4A14E2C66D81798AA3980F3BA2; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=OnmBbFgSHZjUmKMJv8U8iU_ULv9R2BIv9pk_lftN8R4-1696365815-0-AclMiOdqXS2Elh4cTe92hoWfbTKnM8X/akB2Bn7oj6n7ebzmsioYzjjW7vUVwVM2DwhVejaJR0ZfHXcz+eSqhBS6BpL3ibS42V4ns+focC5C;
+        path=/; expires=Tue, 03-Oct-23 21:13:35 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8108047d2a407e74-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":25,"totalXp":15860413,"averageXpGain":9112,"totalGain":109344,"monthData":[{"xpGain":0,"timestamp":1667511815487,"rank":0},{"xpGain":0,"timestamp":1670103815487,"rank":0},{"xpGain":34435,"timestamp":1673053944290,"rank":108428},{"xpGain":0,"timestamp":1675460615487,"rank":0},{"xpGain":0,"timestamp":1677879815487,"rank":0},{"xpGain":0,"timestamp":1680554615487,"rank":0},{"xpGain":0,"timestamp":1683146615487,"rank":0},{"xpGain":0,"timestamp":1685825015487,"rank":0},{"xpGain":0,"timestamp":1688417015487,"rank":0},{"xpGain":0,"timestamp":1691095415487,"rank":0},{"xpGain":74909,"timestamp":1696032123471,"rank":59407},{"xpGain":0,"timestamp":1696365815487,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:35 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=26
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:43 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=22215E764414641DEB976CB484E193BA; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=MI3XGDGg78rRmNa98xgsZhVc_gYvoFfipOX3X3CarIA-1696365823-0-Aaw6eJEV5l6XDt8CHHtPy8tmc+WTAO2hC1gTOgsutnYcbItGgvO2sA1D+8ggZM77+u2ma7kxHLaVizZPDLI5AFJTSC2g2dTg3I+rirmvvPlw;
+        path=/; expires=Tue, 03-Oct-23 21:13:43 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810804abfec67bf2-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":26,"totalXp":60025425,"averageXpGain":1008197,"totalGain":12098370,"monthData":[{"xpGain":0,"timestamp":1667511823592,"rank":0},{"xpGain":0,"timestamp":1670103823592,"rank":0},{"xpGain":122879,"timestamp":1673053944292,"rank":71520},{"xpGain":0,"timestamp":1675460623592,"rank":0},{"xpGain":0,"timestamp":1677879823592,"rank":0},{"xpGain":0,"timestamp":1680554623592,"rank":0},{"xpGain":0,"timestamp":1683146623592,"rank":0},{"xpGain":0,"timestamp":1685825023592,"rank":0},{"xpGain":0,"timestamp":1688417023592,"rank":0},{"xpGain":0,"timestamp":1691095423592,"rank":0},{"xpGain":6731284,"timestamp":1696080620384,"rank":7789},{"xpGain":5244207,"timestamp":1696290391620,"rank":661}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:43 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:43:51 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=8AD555DBAACB8792A7905939F994A5BF; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=FXbPdUb3EeoQAJCA7qSqSBXPw_DkUS099rukwLuFP30-1696365831-0-AQ8VMddKRlKbWMXy4wcDTco8Gq7VmWnr2Iyl7v4IDqMlqJCWhzQwcd4ubscWw91fB2LdRaNEqAXUlM9YyrgjvsA41WdgE1X6oa7ssBWxLCns;
+        path=/; expires=Tue, 03-Oct-23 21:13:51 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810804df18f0dbb6-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":27,"totalXp":17876092,"averageXpGain":40088,"totalGain":481056,"monthData":[{"xpGain":0,"timestamp":1667511831535,"rank":0},{"xpGain":0,"timestamp":1670103831535,"rank":0},{"xpGain":0,"timestamp":1672782231535,"rank":0},{"xpGain":0,"timestamp":1675460631535,"rank":0},{"xpGain":0,"timestamp":1677879831535,"rank":0},{"xpGain":0,"timestamp":1680554631535,"rank":0},{"xpGain":0,"timestamp":1683146631535,"rank":0},{"xpGain":0,"timestamp":1685825031535,"rank":0},{"xpGain":0,"timestamp":1688417031535,"rank":0},{"xpGain":0,"timestamp":1691095431535,"rank":0},{"xpGain":481056,"timestamp":1695750737629,"rank":33873},{"xpGain":0,"timestamp":1696365831535,"rank":0}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:43:51 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:44:04 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=A1EAF1D88997290A8900E651B410C6AC; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=aQt4AHEGjHtS.odZVYRNaGoOT2UHbqaUOM1IL12CFsc-1696365844-0-AQJMRItqtP9rXDOcivRuIZ49f6dQZplwdzWe9kZ8K8I8u6h+ojqTv7TyCW6ywrpLn+t3znMFpu9MvWoAQ28qh1aK4LLn20HgeFWZi+0GmIeV;
+        path=/; expires=Tue, 03-Oct-23 21:14:04 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 810805106a122a9b-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":28,"totalXp":24769570,"averageXpGain":2064128,"totalGain":24769539,"monthData":[{"xpGain":0,"timestamp":1667511844174,"rank":0},{"xpGain":0,"timestamp":1670103844174,"rank":0},{"xpGain":0,"timestamp":1672782244174,"rank":0},{"xpGain":0,"timestamp":1675460644174,"rank":0},{"xpGain":0,"timestamp":1677879844174,"rank":0},{"xpGain":0,"timestamp":1680554644174,"rank":0},{"xpGain":0,"timestamp":1683146644174,"rank":0},{"xpGain":0,"timestamp":1685825044174,"rank":0},{"xpGain":0,"timestamp":1688417044174,"rank":0},{"xpGain":0,"timestamp":1691095444174,"rank":0},{"xpGain":18795069,"timestamp":1696039014687,"rank":19262},{"xpGain":5974470,"timestamp":1696293950534,"rank":2965}]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:44:04 GMT
+recorded_with: VCR 6.2.0

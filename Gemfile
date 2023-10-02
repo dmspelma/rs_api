@@ -9,6 +9,6 @@ source 'https://rubygems.org' do
 end
 
 group :test do
-  gem 'webmock', '~> 3.14'
   gem 'vcr'
+  gem 'webmock', '~> 3.14'
 end

@@ -16,7 +16,7 @@ module RsApi
     # Test PlayerCompare
     RSpec.describe PlayerCompare do
       before do
-        @compared_players = PlayerCompare.new('player1', 'player2')
+        @compared_players = described_class.new('player1', 'player2')
       end
 
       it 'Compares two players with equal skill that tie and puts answer the in `results`' do
@@ -24,7 +24,7 @@ module RsApi
         @compared_players.player2.stub(:loaded_xp).and_return(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE)
         @compared_players.compare
 
-        expect(@compared_players.results).to_not be_nil
+        expect(@compared_players.results).not_to be_nil
         expect(@compared_players.results.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
@@ -46,7 +46,7 @@ module RsApi
         @compared_players.player2.stub(:loaded_xp).and_return(p2_results)
         @compared_players.compare
 
-        expect(@compared_players.results).to_not be_nil
+        expect(@compared_players.results).not_to be_nil
         expect(@compared_players.results.length).to eq(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE.length)
 
         map_of_winners = @compared_players.results.map { |result| result[1] }.uniq
@@ -56,7 +56,7 @@ module RsApi
         expect(@compared_players.results.first.class).to eq(Array)
         expect(map_of_winners.length).to eq(3)
         expect(map_of_winners.sort).to eq(%w[TIE player1 player2].sort)
-        expect(total_xp_diff).to_not eq(0)
+        expect(total_xp_diff).not_to eq(0)
       end
     end
   end

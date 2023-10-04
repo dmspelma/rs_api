@@ -15,7 +15,7 @@ module RsApi
         error_msg = 'Please enter a 1-12 character alphanumeric name'
 
         invalid_names.each do |player_name|
-          expect { CheckValidPlayerName.check_player_name(player_name) }.to raise_error(error, error_msg)
+          expect { described_class.check_player_name(player_name) }.to raise_error(error, error_msg)
         end
       end
 
@@ -29,7 +29,7 @@ module RsApi
         ]
 
         valid_names.each do |player_name|
-          expect(CheckValidPlayerName.check_player_name(player_name)).to be_nil
+          expect(described_class.check_player_name(player_name)).to be_nil
         end
       end
     end

@@ -12,7 +12,7 @@ module RsApi
     # Test PlayerExperience
     RSpec.describe PlayerExperience do
       before do
-        @player = PlayerExperience.new('tibthedragon')
+        @player = described_class.new('tibthedragon')
         @player.stub(:loaded_xp).and_return(SUCCESS_PLAYER_PARSED_FORMATTED_RESPONSE)
       end
 

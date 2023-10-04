@@ -7,11 +7,11 @@ module RsApi
     describe RsMonthlyXp do
       it 'with invalid name' do
         error = RsApi::CheckValidPlayerName::RsNameInvalid
-        expect { RsMonthlyXp.new('tib...dragon') }.to raise_error(error)
+        expect { described_class.new('tib...dragon') }.to raise_error(error)
       end
 
       it 'with valid name' do
-        expect { RsMonthlyXp.new('tibthedragon') }.to_not raise_error
+        expect { described_class.new('tibthedragon') }.not_to raise_error
       end
     end
 
@@ -39,7 +39,7 @@ module RsApi
         VCR.use_cassette('runemetrics/player_found', erb: { player_name: }) do
           service = RsMonthlyXp.new(player_name)
           data = service.raw_data
-          expect { data }.to_not raise_error
+          expect { data }.not_to raise_error
           expect(data.class).to eq(Hash)
           expect(data.length).to eq(MONTHLY_XP_SKILL_ID_CONST.length)
         end

@@ -1,0 +1,1279 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:26:21 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=53BEAE27ABB6318DB872DDA2D3128E98; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=ccpoQK83nqmeDgRRfkSejp4IkIESagRsRntd_gOLbck-1696364781-0-AQWbqG8wbP4Z9vX0KdeGS0HHPioTxaDUAtw2KTvPIdohxAyq56GSPSW999l/KD7UatU5xNBUb7WtfgkJWLrZEfpPTqOhz/2AqG8B2TKnxTIA;
+        path=/; expires=Tue, 03-Oct-23 20:56:21 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eb2e3bc42f03-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":0,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:26:21 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:26:33 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=4B729CE1D3FDB40E3C2EA860744578C6; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=QnZeezIJ_xuXwiKd15f2PN42NM7Ev0k3YtS6Aorg2Qk-1696364793-0-AZFw7IxVz/HWebaPPj4RLGV5N6F/xb7sj1+pgRlxq/VWGmrMXqDW+NLi0JeqLXWyeB15YHH5itIsrSVNfEF98ppgGiLY1/LJlZfZtTmCc8Cy;
+        path=/; expires=Tue, 03-Oct-23 20:56:33 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eb6e682b2aa6-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":1,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:26:33 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:26:42 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=DCAB65CD69ACA072CE51F77909267BBE; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=VkjiKp8Z5ifbsfFtLuGXEbkWTlDdr00PD7n4ylx.nlk-1696364802-0-AXB9XK5UuzbRXHjfLIYl85vs2bPmrB6JxUw9aR36g+XucsUgdp5nDDZoUSpIfkNIQA2bVTV5oul+5b1HRYeU2II3h6vVkleNuS6BoZDNwmrL;
+        path=/; expires=Tue, 03-Oct-23 20:56:42 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ebb9eff5102c-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":2,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:26:42 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:26:56 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=2C8B844255E20BC3557913D1DF3491E7; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=0lvSItG7KZpjyw4yKg3yHeQKLfg1MAAJk6m9m50Cg5s-1696364816-0-AXUrWUegTCP5t+DbchoN1jBs3el7vGlJrrfvXRI0OueBaiWKnbZCyRn+t3Ln0CHLZWu4LeKWhR2Mqa8DywOkVK9RkjHnxcAUygZYLN5ELEWK;
+        path=/; expires=Tue, 03-Oct-23 20:56:56 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ebefca1c2f5c-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":3,"totalXp":1154,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:26:56 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:12 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=51AB99B51F1DE1C72DF8FF2CB5709B01; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=QAyCW3ppefabpDfMowvfF0E7wcx7X0FZi.m_.ZB3klA-1696364832-0-ATGtAaZkce/jplyb3i5o0jD7iwYIz+orPWz2yoeOgDYoB9WjBVvVgbYOIogvc3FSDIDzX3idO8GHFOr2PZLZLQOILA7C8c29c3Vzcb1o4Tep;
+        path=/; expires=Tue, 03-Oct-23 20:57:12 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ec477aa9103d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":4,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:12 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:21 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=AE5E1F2E17BF533661AE47286405A9DE; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=C4I_uaE4zhvBke.VNqW3QSUXbr0_hnG3lRLbnrUVet8-1696364841-0-AWKXmudftS6rYkWURs+T8T/q8jt9QTYtuSx2sByYoJGHdJouIaLFB3FNjXelb+pnOez3TF6oI27ZSM+1eI3XTZkPNw9EvS0nHUmSYh8/5d4T;
+        path=/; expires=Tue, 03-Oct-23 20:57:21 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ecadcfe47c98-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":5,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:21 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:30 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=CDC88D152F543BA898A926E457CE122B; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=kR4PFDvrAgbC3.RLbgObWbu6t8gN60tebA1lx3R0xKM-1696364850-0-AVSaqLkr9vL3/PkKlkGWSBPpvOluO3gikxVJcHYpRHt2I/coJxfWuIewnOsGelxToqmStUZTh92y0zjXbXG5fee6X7BJGNBSnLCTsSblvQyC;
+        path=/; expires=Tue, 03-Oct-23 20:57:30 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ece238c47e8e-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":6,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:30 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:38 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=169C1FEF1C87F17C09C4882E1C4886C2; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=DeRyznP1uPuv6S70W0Vj6FTPSVP_30JV6vyLguLzAIY-1696364858-0-ActruA5uji5kApOxqoXgDMxjT//HYpGE+sfJUvC5yZ+cCOOo++DFuUUqXD2adlgap2wWcXGkiEtaz8q7NQ6ApgW+Vf/QkSGeQkjDJztVnSJO;
+        path=/; expires=Tue, 03-Oct-23 20:57:38 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ed1d29c00d3c-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":7,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:38 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:45 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=EAF308CBF24210E7291278FF37770A11; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=nHEXWyQApOG3hs7Wr14bu5S4ZxTZXHKz4kaJgR41Vn4-1696364865-0-AVJugew0uatKHbV/q3D4geIWejPjSpXlez9fRzw6mlUtGfnvEmRNaTVLOF6cni4Em+N+ohzGP1nYqtv0VzyUbBO+GAHCsUeZPfk3BS5Galu1;
+        path=/; expires=Tue, 03-Oct-23 20:57:45 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ed514d2d7ca3-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":8,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:45 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:27:52 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=0D7DEE910056F13FC2074C77F5183192; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=Gw8_i.2j8NH.ZvaZDLu3W7ec.h6D58MZWtVKvrdCFO8-1696364872-0-AUP3UuXL2E0UgCFizn2QGm6/te8/0OTqmPRAxoz1knozUKCHi93gtPiF8FmE+B9fbRAU0SguYSUutrRoTi7UHUBKUDYDWDJPHp9L0xuqOCU2;
+        path=/; expires=Tue, 03-Oct-23 20:57:52 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ed780c697e76-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":9,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:27:52 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:00 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=795F30D89515B8949943F4C1A46CF889; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=PKSntcd1xy9hJnTwkw0.E4NfXTGUpQSgdsCOGq1AOUw-1696364880-0-AZ7FeCgwK7NdEOvz0Dzui8TbfMbdkcw8B5LSgfJ6427c2qg7GNXsrCKArc8sXLRpwa289RrkzP1npMF8HZMppkFeXZsmDuvCbvohA20vq9Y2;
+        path=/; expires=Tue, 03-Oct-23 20:58:00 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eda42a727d7d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":10,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:00 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:08 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=28AD5575BD47020283904EB3AF237059; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=JgHU42Xy.P5BhHmwTZl5achqJedJvHKT36_wkmUXZCs-1696364888-0-AXAsAtXoRPbVI5YDV+rvkNwcMtbt0TsgxM+BbQxrb9/sbWpL63MjRIB0RjsYQmpZm46/oLcE+taMgWgOK6rHDjTVnVLfzZzZwdSrlACjcFUt;
+        path=/; expires=Tue, 03-Oct-23 20:58:08 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107edd56b20dbdd-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":11,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:08 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:12 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=F16494DD0B1D6766AB2DB863160A612B; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=siMpy2JwX_SD.MUgfR0oAU26pd60g8nrVWpRqra2hcs-1696364892-0-AXtYw+OQfSFc/vCSSi3BCWHvE1NaAtvGlXsTltcG8uOYAXqs8EoqyHJfmWjTAz4Ei2dhih29qGShnRVX5PtBrEMlrka9MY3RdolW7lYn4s7C;
+        path=/; expires=Tue, 03-Oct-23 20:58:12 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ee0b59252af1-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":12,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:12 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:18 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=EED8054C58BC16B01A5E6C7115D6D80A; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=M7Jz_99tsESE9UwasoEbwsYzoNTvQkUvQbjO6mAX7VM-1696364898-0-AajZfOzlcEQ7X/K5SMDLU3zoWAkyRGESZn0euzixQAKP+d2KCNiHUrz2MunHeli7j9k33b66T/psj3lyO7PN0C4sjL9xlxf82tY5lRWRv+aD;
+        path=/; expires=Tue, 03-Oct-23 20:58:18 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ee219f607c6d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":13,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:18 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:25 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=00235DD72FF16932F1CA4519F23A3163; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=7xMX7nVWAMLtvgaBj9Of9Np7iFAvHt.hU2V3tchN2tI-1696364905-0-AUvP1U8tB4E0XWChKrmyCfoNFVs4xEaqpAL5ibriXfmUjSxvGB9IFVar4jABZdlWyZ/exlUnb/kNKlEPn98xY+9wjASW2AjOLmPIIJpEMtAu;
+        path=/; expires=Tue, 03-Oct-23 20:58:25 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ee48ad2b2a92-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":14,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:25 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:32 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=83EC1B9768B657EE29764091C2B9FF50; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=CzY2fGzxan.c.yT77o.9AT_nZtklibebPj68sP0FUeo-1696364912-0-AUDyk8magYOFqExd8SIu4Kq2JOpqYhNyHhDimVnur3+ZF76Nwp+QvV1wG7S8cslDrKfaNOzhij6KxV3OxvewFK/Cz10jLhVd5/xtJFp2V1Fe;
+        path=/; expires=Tue, 03-Oct-23 20:58:32 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ee719dda7ceb-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":15,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:33 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=16
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:39 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=87173A9D5EFB6394C19CAA9F16E70441; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=VU.ioNH1ySHVuAsrUG6R2r7U7J7J7Lab2vlPv_QcPFk-1696364919-0-AWxEkuFQJdK8WnFsKrqgH0dT+ahufX9l5EMr0injjzAV22rwV1s/4Pkg1QRzIhbwNa9by5CIApjZ/YH5Xq3uGsoFvsVNTtNwZ/b3sMl3p46U;
+        path=/; expires=Tue, 03-Oct-23 20:58:39 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eea2ef74312b-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":16,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:39 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:42 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=52EA0D180B7EF2880AF8A773BC462132; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=_U8Efv3P3lr86c7HVsAbE9e324KMQxiBfZHvid__YWQ-1696364922-0-Ac3pAjm3Q1+1mLXASQxvf8oYs49oSAhj0T0yu4duxIjcxFuPeCNg8/wZNuCT8AVOIP506sDqyZDE4g044B6USl7HoZ+X0zHwM2e/TFCG6I4s;
+        path=/; expires=Tue, 03-Oct-23 20:58:42 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eecd2c427d27-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":17,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:43 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:48 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=EEACCEB8BC40E8A971BFFF7AD3FE37DC; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=6Bc7PY7gKn_LJhfM1QDbc1Y9asLVmyzsS2ofGblXszQ-1696364928-0-AS2cJn5VRTW7tadpZ6UpUEdxJFo8Td3WVx6vIlVVx6twr8+DU+RtHS5AAAweSGJU1K87FX/zIQL9aDC2SkEWeGlgPzx0tgvlprV99ErA+BPi;
+        path=/; expires=Tue, 03-Oct-23 20:58:48 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eee1a9097c2a-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":18,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:48 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=19
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:54 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=6A21F5274F85209EAC7C11CC64337801; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=9xXjlFnJFCjvdbgyQp7dGF4_2cJw7OIP2axwIGF06yM-1696364934-0-AR/27x46vU6FQlGuAhXNPkOqzsfHS0dmCz/VmIkiSyhz8Re3zX83TRvlmDSMmiZ7hRZMnQ48gDYfKFKiwmoCN/BKC6g08cevAUCU8hEZpDds;
+        path=/; expires=Tue, 03-Oct-23 20:58:54 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef02e9510ff8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":19,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:54 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:28:56 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=97BCE3CC12C7C2F6C33F59CC2E0C5182; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=_mNkRhmFQzfISYbEI6cnlxI_lKC5xOZxmwbPNDKSTBM-1696364936-0-AeTCHUMxyBlQBYBisy/n1/QfdxkC1VR/ch1ZZDDID6pqgd16/wGodDZth0KQgR1tN8M1MfGu/wGnaVwOhwItiHVGAr0cFl/m17SBj1v3CGI5;
+        path=/; expires=Tue, 03-Oct-23 20:58:56 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef2a98462f21-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":20,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:28:56 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:00 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=DA2BBB103DBD7DBCE6B3EC8534A4F749; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=sSfVTk8YJ28PlILJpTzV2cVrfpWsliq0R.KknuwAyGI-1696364940-0-AY/n2eoJVvlwQOWPYWZ9iofUPp3NQ1QFvnxnvlkA92MQYTsFnulNeS1HjuP2uTT2XzEhAoAvr2X4S3THBsarjSCHRN6uSdggP04fPc9gcRSQ;
+        path=/; expires=Tue, 03-Oct-23 20:59:00 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef357c7d0fcd-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":21,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:00 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:04 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=3FD6696743D5DB823A67A26927A00C77; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=vKaVvvBhyWDRfvizM19euuOWit_B5E8rz_mtBMcunng-1696364944-0-Aav9phcoky0z1ZEWNQW/8GKaOZFfCTwL43SvyOFVyOWSg/iiO2jX6lrY6/L9No6+7Pk3g+DIkrn6rV68nDoJNrrqUad8qDZU/O3PUDiiu4cv;
+        path=/; expires=Tue, 03-Oct-23 20:59:04 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef4e7d5d2b74-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":22,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:04 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:09 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=2E9C9E83E334D332BDD745A9BCA7A31D; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=O0feT7xAuEnfYX9rHtLkCDDKWhc15.sXTOXMg4Qsh6g-1696364949-0-Abj7E7Fd4NfhfbykHmwoG4akeICJkQduCh2vo48BbXSXIYeMypTxu/T+c1orVVV8/s5wnv/lT/qrFzWGh+yFmNHeBG+LobmTIKllUpC6B4ZR;
+        path=/; expires=Tue, 03-Oct-23 20:59:09 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef64d9d51018-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":23,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:09 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:11 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=B6597E4555B01811DCEDD04F0F554B47; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=qTZbMYELw6gpo9BdmkgBctdNXMYQIFigoAzyJ3Rb6Fc-1696364951-0-AflKcNEl6F2fiKjD997J4LuUSxVr9djlJJ/QMBSjV7iQtW4YKJiVfJWs1JGLIvzDWPYb1sdIHEMFPKgVBfoGvqZ//4hUJQSRyBWTEqtlnYmE;
+        path=/; expires=Tue, 03-Oct-23 20:59:11 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef883d3c1000-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":24,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:11 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:17 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=ABD18CCB20976EBDD0264A8C147B1EEE; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=fo06xTh3OAy2SRNk08jf.R491VVZ95EOUPn6ScPcPQw-1696364957-0-AUDTL+rAEO92rw6A+httNLeP2iH2czUf6dCovt5stgz1/UxMNiMcVOiWmPOVkZq7bL6V9lZzUyXnJbUlTYhEmoysVqh9hi6Gm18A86oyFaIq;
+        path=/; expires=Tue, 03-Oct-23 20:59:17 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107ef960f770914-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":25,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:17 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=26
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:23 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=ED9F6D87DC3C2EA3D60B2B9A47E2C1AE; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=CeU0s40L9nkLO3JUZBsSo0bMu3zyEvy4yRIkY3WfjKo-1696364963-0-AVp5fe1qaGElau++SvgXtVbKF8PuUFOyCGoKhPUGUlrEZW2psw+/6pIXZY9i0Eh9++Sv+Ijo0jn/mFah8m7TrPS4Y034mnw8qwl1APL50Wed;
+        path=/; expires=Tue, 03-Oct-23 20:59:23 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107efb94b410909-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":26,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:23 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:26 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=24E5E61BB6860CA380E4F6F9BCC7F07A; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=wIKTRw.kODWhGzNW3XBmJAdvX_faQBAR5MSrANW71K0-1696364966-0-AYnAwScXuvJMlns88Fp04Y/8hLRH25BraHcMMy56B1hLdxPurw7J3lCBkNSTyLiK5fLkqdvdBQWeynMFqi8lWwDHqz8wDwmBaX3uJA7ylO7c;
+        path=/; expires=Tue, 03-Oct-23 20:59:26 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107efddc9120918-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":27,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:26 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=<%= player_name %>&skillid=28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2023 20:29:31 GMT
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=048C9C2E9CA258B036034FE9E57B9023; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=gDbYnPRbYcsrN8iEv2HqqnqRLJFYdaDnnZsA_DFF2b4-1696364971-0-AadyNGUfeeWLDYNRtO4oN/6E1djPFD2dKJZLFxL3GDow+v5r7zvsrky18ZN1DV43vdKsAZyHUKFCpDzQ0oPzIUn10z870vCgxAu3mCSS9l3M;
+        path=/; expires=Tue, 03-Oct-23 20:59:31 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8107eff2ea0a0d18-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"monthlyXpGain":[{"skillId":28,"totalXp":0,"averageXpGain":0,"totalGain":0,"monthData":[]}],"loggedIn":"false"}'
+  recorded_at: Tue, 03 Oct 2023 20:29:31 GMT
+recorded_with: VCR 6.2.0

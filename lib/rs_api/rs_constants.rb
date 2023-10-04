@@ -39,5 +39,8 @@ module RsApi
       28 => :archaeology,
       29 => :necromancy
     }.freeze
+
+    MONTHLY_XP_SKILL_ID_CONST = SKILL_ID_CONST.select { |k, _v| k.positive? }
+                                              .transform_keys { |k| k - 1 }.freeze
   end
 end

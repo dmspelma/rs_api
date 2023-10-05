@@ -3,27 +3,32 @@
 module RsApi
   class RsRequestTest
     RSpec.describe RsRequest do
-      before do
-        @url = URI('https://secure.runescape.com/m=hiscore/index_lite.ws?')
-        @params = { player: 'player1' }
-        @request = described_class.new(@url, @params)
+      let(:request) { described_class.new(url, params) }
 
-        @full_url = @url.dup
-        @full_url.query = URI.encode_www_form(@params)
+      it 'initialize' do
+        expect(request.url).not_to be_nil
+        expect(request.params.class).to eq(params.class)
       end
 
-      it 'Initializes Request' do
-        expect(@request.url).not_to be_nil
-        expect(@request.params.class).to eq(Hash)
+      it 'get request successful' do
+        full_url = URI(url)
+        full_url.query = URI.encode_www_form(params)
+        expected_response = { body: SUCCESS_PLAYER_RESPONSE }
+        stub_request(:get, full_url).to_return(expected_response)
+
+        response = request.get
+
+        expect(response).not_to be_nil
+        expect(response.body).to eq(expected_response[:body])
+        expect(response.code).to eq('200')
       end
 
-      it 'Get Request returns response' do
-        response = { body: SUCCESS_PLAYER_RESPONSE }
-        stub = stub_request(:get, @full_url).to_return(response)
+      def params
+        { player: 'player' }
+      end
 
-        @request.get
-        expect(stub).not_to be_nil
-        expect(stub.response.body).to eq(response[:body])
+      def url
+        'https://secure.runescape.com/m=hiscore/index_lite.ws?'
       end
     end
   end

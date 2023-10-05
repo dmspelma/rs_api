@@ -3,9 +3,9 @@
 require 'rs_api/version'
 
 module RsApi
-  RSpec.describe do
+  RSpec.describe 'RsApi version' do
     it 'Version exists' do
-      expect(VERSION).to_not eq(nil)
+      expect(VERSION).not_to be_nil
     end
   end
 end

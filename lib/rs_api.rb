@@ -13,7 +13,7 @@ module RsApi
   autoload :PlayerCompare, 'rs_api/rs_player_compare'
   autoload :PlayerExperience, 'rs_api/rs_player_experience'
   autoload :RsRequest, 'rs_api/rs_request'
-  autoload :CheckValidPlayerName, 'rs_api/helpers/check_valid_player_name'
+  autoload :PlayerNameHelper, 'rs_api/helpers/player_name_helper'
   autoload :Runemetrics, 'rs_api/runemetrics/rs_runemetrics'
   autoload :RsMonthlyXp, 'rs_api/runemetrics/rs_monthly_xp'
 end

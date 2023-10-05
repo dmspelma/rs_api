@@ -1,12 +1,27 @@
+require:
+  - rubocop-rspec
+
+# for rubocop-rspec
+RSpec/FilePath:
+  Enabled: false
+RSpec/SpecFilePathFormat:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 20 # some methods require more complex tests to verify
+  CountAsOne: ['array','hash']
+RSpec/MultipleExpectations:
+  Max: 10
+
 AllCops:
   TargetRubyVersion: 3.1.1
-Metrics/AbcSize:
-  Max: 20
-Metrics/MethodLength:
-  Max: 25
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
+  NewCops: enable
 Layout/CaseIndentation:
   EnforcedStyle: end
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+Metrics/AbcSize:
+  Max: 20
 Metrics/BlockLength:
   Max: 40
+Metrics/MethodLength:
+  Max: 25

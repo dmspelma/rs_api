@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module RsApi
-  module CheckValidPlayerNameTest
-    RSpec.describe CheckValidPlayerName do
+  module PlayerNameHelperTest
+    RSpec.describe PlayerNameHelper do
       it 'raises RsNameInvalid for invalid names' do
         invalid_names = [
           '',
@@ -11,11 +11,11 @@ module RsApi
           'axol.lotle',
           '2,n,e,1'
         ]
-        error = RsApi::CheckValidPlayerName::RsNameInvalid
+        error = PlayerNameHelper::RsNameInvalid
         error_msg = 'Please enter a 1-12 character alphanumeric name'
 
         invalid_names.each do |player_name|
-          expect { CheckValidPlayerName.check_player_name(player_name) }.to raise_error(error, error_msg)
+          expect { described_class.check_player_name(player_name) }.to raise_error(error, error_msg)
         end
       end
 
@@ -29,7 +29,7 @@ module RsApi
         ]
 
         valid_names.each do |player_name|
-          expect(CheckValidPlayerName.check_player_name(player_name)).to be_nil
+          expect(described_class.check_player_name(player_name)).to be_nil
         end
       end
     end

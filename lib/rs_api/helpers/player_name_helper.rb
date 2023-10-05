@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module RsApi
-  # Helper class to validate a player's name
-  module CheckValidPlayerName
+  # Functions for helping with Runescape player names
+  module PlayerNameHelper
     class RsNameInvalid < StandardError; end
 
     def self.check_player_name(player_name)

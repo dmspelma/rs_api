@@ -8,10 +8,10 @@ module RsApi
   # Base class regarding Runescape's Runemetrics API
   class Runemetrics
     include RsConstants
-    include CheckValidPlayerName
+    include PlayerNameHelper
 
     def initialize(player_name)
-      CheckValidPlayerName.check_player_name(player_name)
+      PlayerNameHelper.check_player_name(player_name)
       @player = player_name
     end
 

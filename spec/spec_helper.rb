@@ -18,7 +18,9 @@
 
 require 'text-table'
 require 'net/http'
+require 'simplecov'
 require 'uri'
+SimpleCov.start # required before loading any application files
 require_relative 'support/webmock_setup'
 require_relative 'support/vcr_setup'
 require_relative '../lib/rs_api' # Better for use of requiring files within repo

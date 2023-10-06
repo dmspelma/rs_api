@@ -26,6 +26,7 @@ module RsApi
         VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
 
+          # Can something else help test text from puts?
           expect(service.display).to be_nil
           expect { service.display }.not_to raise_error
         end
@@ -56,6 +57,7 @@ module RsApi
 
         it 'displays player\'s exp' do
           VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+            # Can something else help test text from puts?
             expect { player.display }.not_to raise_error
             expect(player.display).to be_nil
           end

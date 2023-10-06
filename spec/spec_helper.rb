@@ -24,7 +24,6 @@ SimpleCov.start # required before loading any application files
 require_relative 'support/webmock_setup'
 require_relative 'support/vcr_setup'
 require_relative '../lib/rs_api' # Better for use of requiring files within repo
-require_relative 'request_helper' # Better for use of requiring files within repo
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

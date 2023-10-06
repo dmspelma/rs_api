@@ -13,7 +13,7 @@ module RsApi
       it 'get request successful' do
         full_url = URI(url)
         full_url.query = URI.encode_www_form(params)
-        expected_response = { body: SUCCESS_PLAYER_RESPONSE }
+        expected_response = { body: 'success' }
         stub_request(:get, full_url).to_return(expected_response)
 
         response = request.get

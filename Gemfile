@@ -10,6 +10,7 @@ source 'https://rubygems.org' do
 end
 
 group :test do
+  gem 'simplecov'
   gem 'vcr'
   gem 'webmock', '~> 3.14'
 end

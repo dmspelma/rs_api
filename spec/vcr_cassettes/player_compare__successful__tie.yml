@@ -1,0 +1,235 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.runescape.com/m=hiscore/index_lite.ws?player=<%= player1 %>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - secure.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Oct 2023 01:22:45 GMT
+      Content-Type:
+      - text/html; charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01-Jan-1970 00:00:00 GMT
+      Content-Security-Policy:
+      - frame-ancestors https://*.runescape.com:* https://*.jagex.com:*
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Set-Cookie:
+      - JGSTAFFNAME=; version=1; path=/; domain=.runescape.com; secure;
+      - JGSTAFFPASS=; version=1; path=/; domain=.runescape.com; secure;
+      - __cf_bm=iP9jREqAYcU0Yfrr4k9E5dqnyMZ7T_qvIUyqUL1WqYU-1696555365-0-AQtb7KvhGaOSBq4uSS9FaNkYAuLsNFTDirjNu6bqw5yFJH5TgXvXoM+0R8PxdZBjmlV6RlM5nBL3NNiEEIQDnWV/MlETOkFNShl0kHQwBcFW;
+        path=/; expires=Fri, 06-Oct-23 01:52:45 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 811a18547aa6db76-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        1,3018,5800000000
+        1354,99,200000000
+        3739,99,200000000
+        1171,99,200000000
+        3641,99,200000000
+        2861,99,200000000
+        1067,99,200000000
+        866,99,200000000
+        1728,99,200000000
+        1029,99,200000000
+        1268,99,200000000
+        673,99,200000000
+        511,99,200000000
+        1086,99,200000000
+        1354,99,200000000
+        894,99,200000000
+        1447,120,200000000
+        1006,99,200000000
+        3587,99,200000000
+        2706,120,200000000
+        2711,120,200000000
+        1020,99,200000000
+        1332,99,200000000
+        987,99,200000000
+        2036,99,200000000
+        7238,120,200000000
+        1334,99,200000000
+        609,120,200000000
+        22,120,200000000
+        1,120,200000000
+        -1,-1
+        -1,-1
+        64201,2216772
+        -1,-1
+        -1,-1
+        13697,2420
+        7094,2698
+        8290,2530
+        13014,2754
+        -1,-1
+        -1,-1
+        -1,-1
+        120079,683
+        37548,268
+        25401,598
+        40576,350612
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        47368,75
+        -1,-1
+        -1,-1
+        17273,20935
+        190766,2
+        144543,2
+        87513,48
+        64504,58
+        31393,53
+  recorded_at: Fri, 06 Oct 2023 01:22:44 GMT
+- request:
+    method: get
+    uri: https://secure.runescape.com/m=hiscore/index_lite.ws?player=<%= player2 %>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - secure.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Oct 2023 01:22:45 GMT
+      Content-Type:
+      - text/html; charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01-Jan-1970 00:00:00 GMT
+      Content-Security-Policy:
+      - frame-ancestors https://*.runescape.com:* https://*.jagex.com:*
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Set-Cookie:
+      - JGSTAFFNAME=; version=1; path=/; domain=.runescape.com; secure;
+      - JGSTAFFPASS=; version=1; path=/; domain=.runescape.com; secure;
+      - __cf_bm=eBpCwx9I6No785IRoqlzYpwkmu5ZsqQIaL6PlUF4GKk-1696555365-0-AY5AgfeInkdZurklOjFHTjOs26rUU7e1VhvDE2zDEjiqkeMYaHOw0PoiCV6m9gRkvWZAlbwT1w+FovUWcTalM+TOt/4Y7gvwU0x4YrM7RS4q;
+        path=/; expires=Fri, 06-Oct-23 01:52:45 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 811a18581b8f7cc8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        2,3018,5800000000
+        1093,99,200000000
+        1346,99,200000000
+        251,99,200000000
+        1853,99,200000000
+        2193,99,200000000
+        587,99,200000000
+        1625,99,200000000
+        1241,99,200000000
+        726,99,200000000
+        699,99,200000000
+        1333,99,200000000
+        1345,99,200000000
+        569,99,200000000
+        667,99,200000000
+        1256,99,200000000
+        693,120,200000000
+        517,99,200000000
+        2219,99,200000000
+        1387,120,200000000
+        787,120,200000000
+        405,99,200000000
+        378,99,200000000
+        446,99,200000000
+        1283,99,200000000
+        6629,120,200000000
+        590,99,200000000
+        3832,120,200000000
+        11,120,200000000
+        2,120,200000000
+        -1,-1
+        -1,-1
+        15170,4926275
+        -1,-1
+        4857,921
+        21139,2047
+        25851,1433
+        16769,1934
+        35173,1895
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        38685,261
+        47434,550
+        838,1515000
+        -1,-1
+        8590,16
+        -1,-1
+        52,6
+        64,5
+        153037,3
+        -1,-1
+        -1,-1
+        853,30100
+        97,5000
+        229393,1
+        1,148300
+        459,4440
+        10,13900
+  recorded_at: Fri, 06 Oct 2023 01:22:45 GMT
+recorded_with: VCR 6.2.0

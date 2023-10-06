@@ -7,4 +7,7 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   # your HTTP request service.
   c.hook_into :webmock
+
+  # Leaving this here, because this can help when debugging
+  # c.debug_logger = $stderr
 end

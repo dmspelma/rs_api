@@ -10,6 +10,8 @@ module RsApi
     include RsConstants
     include PlayerNameHelper
 
+    attr_reader :player
+
     def initialize(player_name)
       PlayerNameHelper.check_player_name(player_name)
       @player = player_name

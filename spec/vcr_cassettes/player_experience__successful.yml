@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.runescape.com/m=hiscore/index_lite.ws?player=<%= player_name %>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - secure.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Oct 2023 22:43:34 GMT
+      Content-Type:
+      - text/html; charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01-Jan-1970 00:00:00 GMT
+      Content-Security-Policy:
+      - frame-ancestors https://*.runescape.com:* https://*.jagex.com:*
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Set-Cookie:
+      - JGSTAFFNAME=; version=1; path=/; domain=.runescape.com; secure;
+      - JGSTAFFPASS=; version=1; path=/; domain=.runescape.com; secure;
+      - __cf_bm=4FaTQ2xftXhm29P_ZuFWCmxQYF_ai_vapRzTgE70z2U-1696545814-0-Afk3MJyPMYWKmb4i8FV846isxP/tdfUKRkdnLO/dH4CCcGo2yGl7DoCwnlQtSvx7OPyVVtMtM2oSsGULYPkTNwqF+ifsWHBGkiIozy2uncYU;
+        path=/; expires=Thu, 05-Oct-23 23:13:34 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81192f27da4a0922-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        74458,2914,599615518
+        90411,99,28423217
+        298826,99,13080783
+        245548,99,13466140
+        163389,99,32299678
+        156063,99,19353130
+        107594,99,15560183
+        122965,99,27388824
+        108361,99,15441251
+        88974,99,17571358
+        40793,99,22897236
+        133329,99,17341968
+        87362,99,19036470
+        135868,99,14424650
+        97117,99,16573207
+        116043,99,18688562
+        191572,100,14765804
+        100334,99,16934848
+        167321,99,13532391
+        115090,109,36149886
+        144800,102,17636755
+        57197,99,18048497
+        160318,99,13466942
+        121887,99,14583628
+        162327,99,13492551
+        109210,107,30422738
+        92514,99,15946153
+        141200,111,60035229
+        129886,102,17876092
+        35332,105,25177347
+  recorded_at: Thu, 05 Oct 2023 22:43:34 GMT
+recorded_with: VCR 6.2.0

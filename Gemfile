@@ -9,7 +9,6 @@ source 'https://rubygems.org' do
   gem 'text-table', '~> 1.2', '>= 1.2.4'
 end
 
-
 group :test do
   gem 'simplecov'
   gem 'vcr'

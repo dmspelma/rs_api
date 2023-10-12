@@ -1,0 +1,9 @@
+# This file's purpose is to outline all of the various config settings this library includes.
+
+# The different environments have their own file in the environments/ folder.
+
+# When adding a new setting, please ensure this file is updated.
+# Additionally, ensure all settings are sorted alphabetically.
+
+# Do you want output text displayed when performing various methods
+display_output:

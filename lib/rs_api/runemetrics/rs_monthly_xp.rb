@@ -17,6 +17,10 @@ module RsApi
 
     private
 
+    def display?
+      RsApi.load_config['display_output']
+    end
+
     def missing_player_data
       MissingPlayerData.new('Player data is missing.')
     end
@@ -26,7 +30,7 @@ module RsApi
     end
 
     def request_all_data
-      puts 'Processing request. Please wait...' # if [insert_some_configuration] (future work)
+      puts 'Processing request. Please wait...' if display?
       data = {}
       sum_total_gain_xp = 0
 

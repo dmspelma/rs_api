@@ -16,6 +16,9 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
+# Set the environment to 'test' for RSpec
+ENV['RS_API_ENV'] = 'test'
+
 require 'text-table'
 require 'net/http'
 require 'simplecov'

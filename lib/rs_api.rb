@@ -4,6 +4,7 @@ require 'json'
 require 'net/http'
 require 'text-table'
 require 'uri'
+require 'yaml'
 require_relative 'rs_api/rs_int_extend'
 require_relative 'rs_api/version'
 
@@ -16,4 +17,13 @@ module RsApi
   autoload :PlayerNameHelper, 'rs_api/helpers/player_name_helper'
   autoload :Runemetrics, 'rs_api/runemetrics/rs_runemetrics'
   autoload :RsMonthlyXp, 'rs_api/runemetrics/rs_monthly_xp'
+
+  def self.load_config
+    env = ENV['RS_API_ENV'] || 'development'
+    config_file = File.join('config', 'environments', "#{env}.yml")
+
+    raise "Missing configuration file #{env}.yml for environment under #{config_file}" unless File.exist?(config_file)
+
+    YAML.load_file(config_file)
+  end
 end

@@ -38,7 +38,7 @@ module RsApi
     def display
       compare if results.empty?
       table.head = %w[SKILL WINNER XP-DIFFERENCE]
-      puts table
+      puts table if display?
     end
 
     def results
@@ -46,6 +46,10 @@ module RsApi
     end
 
     private
+
+    def display?
+      RsApi.load_config['display_output']
+    end
 
     def formatted_results
       f_result = results.dup

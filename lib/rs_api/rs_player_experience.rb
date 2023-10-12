@@ -20,9 +20,9 @@ module RsApi
 
     def display
       table_data if table.rows.empty?
-      puts table
+      puts table if display?
     rescue PlayerNotFound => e
-      puts "#{e} | '#{@username}' does not exist."
+      puts "#{e} | '#{@username}' does not exist." if display?
     end
 
     def loaded_xp
@@ -49,6 +49,10 @@ module RsApi
     end
 
     private
+
+    def display?
+      RsApi.load_config['display_output']
+    end
 
     def table
       @table ||= Text::Table.new(horizontal_padding: 2)

@@ -5,7 +5,7 @@ require 'net/http'
 require 'text-table'
 require 'uri'
 require 'yaml'
-require_relative 'rs_api/rs_int_extend'
+require_relative 'rs_api/helpers/integer_helper'
 require_relative 'rs_api/version'
 
 # Base RsApi module for autoloading files

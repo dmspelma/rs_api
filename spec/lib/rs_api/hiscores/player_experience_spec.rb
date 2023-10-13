@@ -2,7 +2,7 @@
 
 module RsApi
   class PlayerExperienceTest
-    include RsConstants
+    include SkillHelper
 
     RSpec.describe PlayerExperience do
       let(:player) { described_class.new(player_name) }

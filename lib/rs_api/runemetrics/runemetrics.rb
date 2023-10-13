@@ -7,7 +7,7 @@
 module RsApi
   # Base class regarding Runescape's Runemetrics API
   class Runemetrics
-    include RsConstants
+    include SkillHelper
     include PlayerNameHelper
 
     attr_reader :player

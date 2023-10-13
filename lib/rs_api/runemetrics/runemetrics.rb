@@ -19,6 +19,10 @@ module RsApi
 
     private
 
+    def display?
+      RsApi.load_config['display_output']
+    end
+
     def params
       raise 'implement me!'
     end

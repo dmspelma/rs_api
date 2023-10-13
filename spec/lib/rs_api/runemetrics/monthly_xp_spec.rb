@@ -2,7 +2,7 @@
 
 module RsApi
   module MonthlyXpTest
-    include RsConstants
+    include SkillHelper
 
     describe MonthlyXp do
       it 'with invalid name' do

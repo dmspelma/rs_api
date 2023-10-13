@@ -5,12 +5,12 @@ require 'net/http'
 require 'text-table'
 require 'uri'
 require 'yaml'
-require_relative 'rs_api/rs_int_extend'
+require_relative 'rs_api/helpers/integer_helper'
 require_relative 'rs_api/version'
 
 # Base RsApi module for autoloading files
 module RsApi
-  autoload :RsConstants, 'rs_api/rs_constants'
+  autoload :SkillHelper, 'rs_api/helpers/skill_helper'
   autoload :PlayerCompare, 'rs_api/hiscores/rs_player_compare'
   autoload :PlayerExperience, 'rs_api/hiscores/rs_player_experience'
   autoload :Hiscore, 'rs_api/hiscores/hiscore'

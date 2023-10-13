@@ -9,7 +9,7 @@ module RsApi
   class Hiscore
     class PlayerNotFound < StandardError; end
     include PlayerNameHelper
-    include RsConstants
+    include SkillHelper
 
     private
 

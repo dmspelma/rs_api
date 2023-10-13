@@ -7,7 +7,7 @@
 module RsApi
   # Base class regarding Runescape's Runemetrics API
   class Runemetrics
-    include RsConstants
+    include SkillHelper
     include PlayerNameHelper
 
     attr_reader :player
@@ -18,6 +18,10 @@ module RsApi
     end
 
     private
+
+    def display?
+      RsApi.load_config['display_output']
+    end
 
     def params
       raise 'implement me!'

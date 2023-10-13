@@ -2,7 +2,7 @@
 
 module RsApi
   class PlayerCompareTest
-    include RsConstants
+    include SkillHelper
 
     RSpec.describe PlayerCompare do
       let(:service) { described_class.new(player1, player2) }

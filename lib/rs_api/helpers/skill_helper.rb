@@ -2,7 +2,7 @@
 
 # Default Runescape-related constants
 module RsApi
-  module RsConstants
+  module SkillHelper
     MAX = 13_034_431 # Xp needed to lv 99 in any skill,
     # useless now BUT could be useful in future.
 

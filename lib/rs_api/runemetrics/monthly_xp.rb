@@ -17,10 +17,6 @@ module RsApi
 
     private
 
-    def display?
-      RsApi.load_config['display_output']
-    end
-
     def missing_player_data
       MissingPlayerData.new('Player data is missing.')
     end

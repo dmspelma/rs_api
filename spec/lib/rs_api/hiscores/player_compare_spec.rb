@@ -10,9 +10,9 @@ module RsApi
 
       it 'Initializes PlayerCompare' do
         expect(service.player1.class).to eq(PlayerExperience)
-        expect(service.player1.username).to eq('player1')
+        expect(service.player1.player_name).to eq('player1')
         expect(service.player2.class).to eq(PlayerExperience)
-        expect(service.player2.username).to eq('player2')
+        expect(service.player2.player_name).to eq('player2')
       end
 
       describe 'compares players' do
@@ -53,7 +53,7 @@ module RsApi
           end
         end
 
-        it 'displays player xp comparison' do
+        it 'display xp comparison' do
           VCR.use_cassette('player_compare__successful__different_xp', erb:) do
             # Can something else help test text from puts?
             expect { service.display }.not_to raise_error

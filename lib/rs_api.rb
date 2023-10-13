@@ -11,8 +11,9 @@ require_relative 'rs_api/version'
 # Base RsApi module for autoloading files
 module RsApi
   autoload :RsConstants, 'rs_api/rs_constants'
-  autoload :PlayerCompare, 'rs_api/rs_player_compare'
-  autoload :PlayerExperience, 'rs_api/rs_player_experience'
+  autoload :PlayerCompare, 'rs_api/hiscores/rs_player_compare'
+  autoload :PlayerExperience, 'rs_api/hiscores/rs_player_experience'
+  autoload :Hiscore, 'rs_api/hiscores/hiscore'
   autoload :RsRequest, 'rs_api/rs_request'
   autoload :PlayerNameHelper, 'rs_api/helpers/player_name_helper'
   autoload :Runemetrics, 'rs_api/runemetrics/rs_runemetrics'

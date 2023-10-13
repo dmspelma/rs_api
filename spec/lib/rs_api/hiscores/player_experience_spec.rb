@@ -21,11 +21,12 @@ module RsApi
       it 'displays PlayerNotFound' do
         unknown_name = 'unknown'
         erb = { player_name: unknown_name }
+        RsApi.stub(:load_config).and_return({ display_output: true })
 
         # I need to allow playback repeats because `loaded_xp` has no data
         VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
-
+          # binding.pry
           # Can something else help test text from puts?
           expect(service.display).to be_nil
           expect { service.display }.not_to raise_error
@@ -33,7 +34,7 @@ module RsApi
       end
 
       it 'sets username' do
-        expect(player.username).to eq(player_name)
+        expect(player.player_name).to eq(player_name)
       end
 
       context 'when request successful' do
@@ -48,10 +49,10 @@ module RsApi
 
         it 'formats experience' do
           VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
-            player_xp = player.loaded_xp
+            table = player.display
 
             # confirm experience value is formatted with .delimited
-            expect(player_xp[0][2]).to include(',').at_least(:once)
+            expect(table.rows.last[2]).to include(',').at_least(:once)
           end
         end
 
@@ -59,7 +60,7 @@ module RsApi
           VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
             # Can something else help test text from puts?
             expect { player.display }.not_to raise_error
-            expect(player.display).to be_nil
+            expect(player.display).to be_instance_of(Text::Table)
           end
         end
 

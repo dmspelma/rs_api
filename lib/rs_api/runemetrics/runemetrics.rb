@@ -20,11 +20,11 @@ module RsApi
     private
 
     def params
-      {}
+      raise 'implement me!'
     end
 
     def url
-      'implement me!'
+      raise 'implement me!'
     end
   end
 end

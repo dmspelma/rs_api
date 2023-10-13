@@ -5,7 +5,7 @@ The `PlayerExperience` class is able to gather hiscore information for any playe
 
 The `PlayerCompare` class is able to compare two existing places and pit their skills against each other.
 
-The `RsMonthlyXp` class is able to grab the last 12 months of player xp data for every skill.
+The `MonthlyXp` class is able to grab the last 12 months of player xp data for every skill.
 
 #### To Install Gem:
 1. Clone Repo

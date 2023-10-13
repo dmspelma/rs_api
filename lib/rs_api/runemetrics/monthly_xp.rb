@@ -7,7 +7,7 @@
 
 module RsApi
   # For obtaining monthly xp data for a user.
-  class RsMonthlyXp < Runemetrics
+  class MonthlyXp < Runemetrics
     class PlayerNotFound < StandardError; end
     class MissingPlayerData < StandardError; end
 
@@ -64,5 +64,5 @@ module RsApi
 end
 
 # Example:
-# a = RsApi::RuneMetrics::RsMonthlyXp.new('tibthedragon..')
+# a = RsApi::RuneMetrics::MonthlyXp.new('tibthedragon..')
 # p a.raw_data

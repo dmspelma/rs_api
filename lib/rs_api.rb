@@ -17,7 +17,7 @@ module RsApi
   autoload :RsRequest, 'rs_api/rs_request'
   autoload :PlayerNameHelper, 'rs_api/helpers/player_name_helper'
   autoload :Runemetrics, 'rs_api/runemetrics/runemetrics'
-  autoload :RsMonthlyXp, 'rs_api/runemetrics/rs_monthly_xp'
+  autoload :MonthlyXp, 'rs_api/runemetrics/monthly_xp'
 
   def self.load_config
     env = ENV['RS_API_ENV'] || 'development'

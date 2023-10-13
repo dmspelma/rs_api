@@ -19,6 +19,8 @@ Layout/CaseIndentation:
   EnforcedStyle: end
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
+Lint/MissingSuper:
+  Enabled: false # Exclude doesn't seem to work??
 Metrics/AbcSize:
   Max: 20
 Metrics/BlockLength:

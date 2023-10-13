@@ -10,11 +10,11 @@ module RsApi
       end
 
       it 'has default params' do
-        expect(service.send(:params)).to eq({})
+        expect { service.send(:params) }.to raise_error(RuntimeError, 'implement me!')
       end
 
       it 'has default url' do
-        expect(service.send(:url)).to eq('implement me!')
+        expect { service.send(:url) }.to raise_error(RuntimeError, 'implement me!')
       end
 
       def player

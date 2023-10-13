@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 module RsApi
-  module RsMonthlyXpTest
+  module MonthlyXpTest
     include RsConstants
 
-    describe RsMonthlyXp do
+    describe MonthlyXp do
       it 'with invalid name' do
         error = PlayerNameHelper::RsNameInvalid
         expect { described_class.new('tib...dragon') }.to raise_error(error)
@@ -19,7 +19,7 @@ module RsApi
           player_name = 'missing'
           VCR.use_cassette('runemetrics/missing_player_data', erb: { player_name: }) do
             service = described_class.new(player_name)
-            error = RsApi::RsMonthlyXp::MissingPlayerData
+            error = RsApi::MonthlyXp::MissingPlayerData
             expect { service.raw_data }.to raise_error(error)
           end
         end
@@ -28,7 +28,7 @@ module RsApi
           player_name = 'not found'
           VCR.use_cassette('runemetrics/player_not_found', erb: { player_name: }) do
             service = described_class.new(player_name)
-            error = RsApi::RsMonthlyXp::PlayerNotFound
+            error = RsApi::MonthlyXp::PlayerNotFound
             expect { service.raw_data }.to raise_error(error)
           end
         end

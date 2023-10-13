@@ -12,9 +12,9 @@ module RsApi
       ENV['RS_API_ENV'] = cached_env
     end
 
-    it 'raises error when environment config is missing' do
-      my_c_file = "config/environments/#{my_env}.yml"
-      error = "Missing configuration file #{my_env}.yml for environment under #{my_c_file}"
+    it 'raises error when settings config is missing' do
+      my_c_file = "config/settings/#{my_env}.yml"
+      error = "Missing configuration file #{my_env}.yml for settings under #{my_c_file}"
 
       expect { described_class.load_config }.to raise_error(RuntimeError, error)
     end

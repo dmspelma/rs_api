@@ -21,9 +21,9 @@ module RsApi
 
   def self.load_config
     env = ENV['RS_API_ENV'] || 'development'
-    config_file = File.join('config', 'environments', "#{env}.yml")
+    config_file = File.join('config', 'settings', "#{env}.yml")
 
-    raise "Missing configuration file #{env}.yml for environment under #{config_file}" unless File.exist?(config_file)
+    raise "Missing configuration file #{env}.yml for settings under #{config_file}" unless File.exist?(config_file)
 
     YAML.load_file(config_file)
   end

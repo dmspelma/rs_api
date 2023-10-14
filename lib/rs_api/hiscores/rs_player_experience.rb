@@ -4,8 +4,11 @@
 # require 'text-table'
 # require_relative 'hiscore'
 # require_relative '../rs_request'
-# require_relative '../rs_int_extend'
-# require_relative '../rs_constants'
+# require_relative '../helpers/integer_helper'
+# require_relative '../helpers/string_colour_helper'
+# require_relative '../helpers/skill_helper'
+# require_relative '../patches/text_table__cell_patch' # for color printing
+# require_relative '../patches/text_table__table_patch' # for color printing
 
 module RsApi
   # Class PlayerExp pulls, from Hiscores, player level/experience in each skill.
@@ -21,7 +24,12 @@ module RsApi
     # Then a print method can be included? or used separately?
     def display
       fill_table_data if table.rows.empty?
-      display? ? (p table) : table
+      if display?
+        # :nocov:
+        colour? ? (puts colour_table) : (puts table)
+        # :nocov:
+      end
+      table
     rescue PlayerNotFound
       puts "#{@player_name} does not exist." if display?
     end
@@ -51,15 +59,25 @@ module RsApi
 
     private
 
-    def fill_table_data
-      table.head = [{ value: "Player: #{player_name}", colspan: 3, align: :center }]
+    # :nocov:
+    def colour_table
+      c_table = table.dup
+      c_table.head = c_table.head.map(&:white)
 
+      c_table.rows = c_table.rows.map do |row|
+        [row[0].to_s.yellow, row[1].red, row[2].cyan, row[3].green]
+      end
+
+      c_table
+    end
+    # :nocov:
+
+    def fill_table_data
+      table.head = [player_name, 'Rank', 'Level', 'Experience']
+
+      # Future: move 'Overall' xp info to footer
       loaded_xp.each_with_index do |value, i|
-        table.rows << if i.zero?
-          [SKILL_ID_CONST[i].capitalize, "Total Level: #{value[1]}", "Total Experience: #{format(value[2])}"]
-        else
-          [SKILL_ID_CONST[i].capitalize, "Level: #{value[1]}", "Experience: #{format(value[2])}"]
-        end
+        table.rows << [SKILL_ID_CONST[i].capitalize, format(value[0]), value[1], format(value[2])]
       end
     end
 

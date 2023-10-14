@@ -15,6 +15,8 @@ RSpec/MultipleExpectations:
 AllCops:
   TargetRubyVersion: 3.1.1
   NewCops: enable
+  Exclude:
+    - 'lib/rs_api/patches/*'
 Layout/CaseIndentation:
   EnforcedStyle: end
 Layout/EndAlignment:

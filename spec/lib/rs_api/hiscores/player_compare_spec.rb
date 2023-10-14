@@ -21,7 +21,7 @@ module RsApi
             service.compare
 
             map_of_winners = service.results.map { |result| result[1] }.uniq
-            total_xp_diff = service.results.map { |result| result[2] }.sum
+            total_xp_diff = service.results.map { |result| result[3] }.sum
 
             expect(service.results.length).to eq(SKILL_ID_CONST.length)
             expect(map_of_winners.length).to eq(1)
@@ -35,7 +35,7 @@ module RsApi
             service.compare
 
             map_of_winners = service.results.map { |result| result[1] }.uniq
-            total_xp_diff = service.results.map { |result| result[2] }.sum
+            total_xp_diff = service.results.map { |result| result[3] }.sum
 
             expect(service.results.length).to eq(SKILL_ID_CONST.length)
             expect(map_of_winners.length).to eq(3)
@@ -57,7 +57,7 @@ module RsApi
           VCR.use_cassette('player_compare__successful__different_xp', erb:) do
             # Can something else help test text from puts?
             expect { service.display }.not_to raise_error
-            expect(service.display).to be_nil
+            expect(service.display).to be_instance_of(Text::Table)
           end
         end
       end

@@ -34,19 +34,19 @@ module RsApi
       puts "#{@player_name} does not exist." if display?
     end
 
-    def loaded_xp
-      @loaded_xp ||= parsed[0..29]
+    def raw_data
+      @raw_data ||= parsed[0..29]
     end
 
     def max_skill_level
       # Returns the highest skill level out of all sklls
-      loaded_xp[1..].map { |value| value[1].to_i }.max.to_s
+      raw_data[1..].map { |value| value[1].to_i }.max.to_s
     end
 
     def skills_at_max_level
       # Returns a array containing only skills at max_skill_level
       # SKILL_ID_CONST[i+1] | i is +1 because I don't want to load the overall skill totals
-      loaded_xp[1..].filter_map.with_index do |value, i|
+      raw_data[1..].filter_map.with_index do |value, i|
         SKILL_ID_CONST[i + 1].to_s.capitalize if value[1] == max_skill_level
       end
     end
@@ -54,7 +54,7 @@ module RsApi
     def all_skill_experience
       # Retuns array containing the experience for each skill
       # Index of skills corresponds to RsConst::SKILL_ID_CONST
-      loaded_xp.map { |n| n.last.delete(',').to_i }
+      raw_data.map { |n| n.last.delete(',').to_i }
     end
 
     private
@@ -76,7 +76,7 @@ module RsApi
       table.head = [player_name, 'Rank', 'Level', 'Experience']
 
       # Future: move 'Overall' xp info to footer
-      loaded_xp.each_with_index do |value, i|
+      raw_data.each_with_index do |value, i|
         table.rows << [SKILL_ID_CONST[i].capitalize, format(value[0]), value[1], format(value[2])]
       end
     end

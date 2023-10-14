@@ -25,15 +25,15 @@ module RsApi
       SKILL_ID_CONST.each do |key, skill_name|
         xp_diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
 
-        results << compare_result(key, skill_name, xp_diff)
+        raw_data << compare_result(key, skill_name, xp_diff)
       end
     end
 
     def display
-      if results.empty?
+      if raw_data.empty?
         compare
         table.head = %w[SKILL WINNER LEVEL XP-DIFFERENCE]
-        table.rows = formatted_results
+        table.rows = formatted_data
       end
 
       if display?
@@ -44,8 +44,8 @@ module RsApi
       table
     end
 
-    def results
-      @results ||= [] # index 0 is total exp, rest is normal skills by exp
+    def raw_data
+      @raw_data ||= [] # index 0 is total exp, rest is normal skills by exp
     end
 
     private
@@ -75,16 +75,16 @@ module RsApi
     def compare_result(key, skill_name, xp_diff)
       case xp_diff <=> 0
       when -1 # p2 has more skill
-        [capitalize(skill_name), @player2.player_name, @player2.loaded_xp[key][1], xp_diff.abs]
+        [capitalize(skill_name), @player2.player_name, @player2.raw_data[key][1], xp_diff.abs]
       when 1 # p1 has more skill
-        [capitalize(skill_name), @player1.player_name, @player1.loaded_xp[key][1], xp_diff]
+        [capitalize(skill_name), @player1.player_name, @player1.raw_data[key][1], xp_diff]
       else # 0
-        [capitalize(skill_name), 'TIE', @player2.loaded_xp[key][1], 0]
+        [capitalize(skill_name), 'TIE', @player2.raw_data[key][1], 0]
       end
     end
 
-    def formatted_results
-      results.map { |i, j, k, l| [i, j, k, l.delimited] }
+    def formatted_data
+      raw_data.map { |i, j, k, l| [i, j, k, l.delimited] }
     end
   end
 end

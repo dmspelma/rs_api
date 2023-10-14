@@ -51,7 +51,7 @@ user.display
 +---------------+---------+-------+-------------+
  => #<Text::Table:0xfaf0>
 ```
-An alternative for reciving raw player data is the `#loaded_xp` method.  
+An alternative for reciving raw player data is the `#raw_data` method.
 
 ---
 
@@ -73,6 +73,7 @@ It contains the same `#display` method, but raw data is `#raw_data`.
 
 #### `MonthlyXp`
 class is able to grab the last 12 months of player xp data for every skill.
+Currently only contains the `#raw_data` method.
 
 ---
 

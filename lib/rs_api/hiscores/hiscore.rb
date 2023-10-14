@@ -17,6 +17,10 @@ module RsApi
       RsApi.load_config['display_output']
     end
 
+    def color?
+      RsApi.load_config['colour_output']
+    end
+
     def params
       raise 'implement me!'
     end

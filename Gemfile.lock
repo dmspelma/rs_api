@@ -80,7 +80,7 @@ DEPENDENCIES
   rubocop (~> 1.43)!
   rubocop-rspec!
   simplecov
-  text-table (~> 1.2, >= 1.2.4)!
+  text-table (~> 1.2)!
   vcr
   webmock (~> 3.14)
 

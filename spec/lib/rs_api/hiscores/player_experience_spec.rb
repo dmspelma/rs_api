@@ -14,7 +14,7 @@ module RsApi
         VCR.use_cassette('player_experience__not_found', erb:) do
           service = described_class.new(unknown_name)
 
-          expect { service.loaded_xp }.to raise_error(RsApi::PlayerExperience::PlayerNotFound)
+          expect { service.raw_data }.to raise_error(RsApi::PlayerExperience::PlayerNotFound)
         end
       end
 
@@ -23,7 +23,7 @@ module RsApi
         erb = { player_name: unknown_name }
         RsApi.stub(:load_config).and_return({ display_output: true })
 
-        # I need to allow playback repeats because `loaded_xp` has no data
+        # I need to allow playback repeats because `raw_data` has no data
         VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
           # binding.pry
@@ -40,7 +40,7 @@ module RsApi
       context 'when request successful' do
         it 'loads xp' do
           VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
-            player_xp = player.loaded_xp
+            player_xp = player.raw_data
 
             expect(player_xp.class).to eq(Array)
             expect(player_xp.length).to eq(SKILL_ID_CONST.length)

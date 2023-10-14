@@ -20,10 +20,10 @@ module RsApi
           VCR.use_cassette('player_compare__successful__tie', erb:) do
             service.compare
 
-            map_of_winners = service.results.map { |result| result[1] }.uniq
-            total_xp_diff = service.results.map { |result| result[3] }.sum
+            map_of_winners = service.raw_data.map { |result| result[1] }.uniq
+            total_xp_diff = service.raw_data.map { |result| result[3] }.sum
 
-            expect(service.results.length).to eq(SKILL_ID_CONST.length)
+            expect(service.raw_data.length).to eq(SKILL_ID_CONST.length)
             expect(map_of_winners.length).to eq(1)
             expect(map_of_winners.first).to eq('TIE')
             expect(total_xp_diff).to eq(0)
@@ -34,10 +34,10 @@ module RsApi
           VCR.use_cassette('player_compare__successful__different_xp', erb:) do
             service.compare
 
-            map_of_winners = service.results.map { |result| result[1] }.uniq
-            total_xp_diff = service.results.map { |result| result[3] }.sum
+            map_of_winners = service.raw_data.map { |result| result[1] }.uniq
+            total_xp_diff = service.raw_data.map { |result| result[3] }.sum
 
-            expect(service.results.length).to eq(SKILL_ID_CONST.length)
+            expect(service.raw_data.length).to eq(SKILL_ID_CONST.length)
             expect(map_of_winners.length).to eq(3)
             expect(map_of_winners.sort).to eq(%w[TIE player1 player2].sort)
             expect(total_xp_diff).not_to eq(0)
@@ -48,8 +48,8 @@ module RsApi
           VCR.use_cassette('player_compare__successful__different_xp', erb:) do
             service.compare
 
-            expect(service.results.class).to eq(Array)
-            expect(service.results.first.class).to eq(Array)
+            expect(service.raw_data.class).to eq(Array)
+            expect(service.raw_data.first.class).to eq(Array)
           end
         end
 

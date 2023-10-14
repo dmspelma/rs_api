@@ -6,6 +6,9 @@ require 'text-table'
 require 'uri'
 require 'yaml'
 require_relative 'rs_api/helpers/integer_helper'
+require_relative 'rs_api/helpers/string_colour_helper'
+require_relative 'rs_api/patches/text_table__cell_patch'
+require_relative 'rs_api/patches/text_table__table_patch'
 require_relative 'rs_api/version'
 
 # Base RsApi module for autoloading files

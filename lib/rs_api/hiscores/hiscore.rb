@@ -2,7 +2,7 @@
 
 # Uncomment below to run Examples in file. Continue for other related files
 # require_relative '../helpers/player_name_helper'
-# require_relative '../rs_constants'
+# require_relative '../helpers/skill_helper'
 
 module RsApi
   # Base class for getting Runescape hiscore data for a player
@@ -17,7 +17,7 @@ module RsApi
       RsApi.load_config['display_output']
     end
 
-    def color?
+    def colour?
       RsApi.load_config['colour_output']
     end
 
@@ -26,7 +26,7 @@ module RsApi
     end
 
     def table
-      @table ||= Text::Table.new(horizontal_padding: 2)
+      @table ||= Text::Table.new(horizontal_padding: 1)
     end
 
     def url

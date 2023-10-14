@@ -52,7 +52,7 @@ module RsApi
             table = player.display
 
             # confirm experience value is formatted with .delimited
-            expect(table.rows.last[2]).to include(',').at_least(:once)
+            expect(table.rows.last[3]).to include(',').at_least(:once)
           end
         end
 

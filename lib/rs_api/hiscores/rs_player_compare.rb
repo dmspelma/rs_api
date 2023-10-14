@@ -4,8 +4,11 @@
 # require 'text-table'
 # require_relative 'hiscore'
 # require_relative '../rs_request'
-# require_relative '../rs_int_extend'
-# require_relative '../rs_constants'
+# require_relative '../helpers/integer_helper'
+# require_relative '../helpers/string_colour_helper'
+# require_relative '../helpers/skill_helper'
+# require_relative '../patches/text_table__cell_patch' # for color printing
+# require_relative '../patches/text_table__table_patch' # for color printing
 # require_relative 'rs_player_experience'
 
 module RsApi
@@ -20,26 +23,25 @@ module RsApi
 
     def compare
       SKILL_ID_CONST.each do |key, skill_name|
-        diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
+        xp_diff = @player1.all_skill_experience[key] - @player2.all_skill_experience[key]
 
-        results << case diff <=> 0
-        when -1 # p2 has more skill
-          [capitalize(skill_name), @player2.player_name, diff.abs]
-        when 1 # p1 has more skill
-          [capitalize(skill_name), @player1.player_name, diff]
-        else # 0
-          [capitalize(skill_name), 'TIE', 0]
-        end
+        results << compare_result(key, skill_name, xp_diff)
       end
     end
 
     def display
       if results.empty?
         compare
-        table.head = %w[SKILL WINNER XP-DIFFERENCE]
+        table.head = %w[SKILL WINNER LEVEL XP-DIFFERENCE]
         table.rows = formatted_results
       end
-      puts table if display?
+
+      if display?
+        # :nocov:
+        colour? ? (puts colour_table) : (puts table)
+        # :nocov:
+      end
+      table
     end
 
     def results
@@ -52,8 +54,37 @@ module RsApi
       value.capitalize
     end
 
+    # :nocov:
+    def colour_row(row)
+      if row[1] == player1.player_name
+        row.map(&:to_s).map(&:blue)
+      else
+        row.map(&:to_s).map(&:green)
+      end
+    end
+
+    def colour_table
+      c_table = table.dup
+      c_table.head = c_table.head.map(&:white)
+      c_table.rows = c_table.rows.map { |row| colour_row(row) }
+
+      c_table
+    end
+    # :nocov:
+
+    def compare_result(key, skill_name, xp_diff)
+      case xp_diff <=> 0
+      when -1 # p2 has more skill
+        [capitalize(skill_name), @player2.player_name, @player2.loaded_xp[key][1], xp_diff.abs]
+      when 1 # p1 has more skill
+        [capitalize(skill_name), @player1.player_name, @player1.loaded_xp[key][1], xp_diff]
+      else # 0
+        [capitalize(skill_name), 'TIE', @player2.loaded_xp[key][1], 0]
+      end
+    end
+
     def formatted_results
-      results.map { |i, j, k| [i, j, k.delimited] }
+      results.map { |i, j, k, l| [i, j, k, l.delimited] }
     end
   end
 end

@@ -7,7 +7,6 @@
 module RsApi
   # Base class for getting Runescape hiscore data for a player
   class Hiscore
-    class PlayerNotFound < StandardError; end
     include PlayerNameHelper
     include SkillHelper
 

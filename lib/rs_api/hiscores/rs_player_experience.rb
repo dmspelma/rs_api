@@ -30,7 +30,7 @@ module RsApi
         # :nocov:
       end
       table
-    rescue PlayerNotFound
+    rescue RsApi::RsRequest::PlayerNotFound
       puts "#{@player_name} does not exist." if display?
     end
 
@@ -93,7 +93,6 @@ module RsApi
     def parsed
       # Response is in CSV format
       response = RsRequest.new(url, params).get
-      raise PlayerNotFound if response.message == 'Not Found'
 
       response.body.split(/\n/).map { |item| item.split(',') }
     end

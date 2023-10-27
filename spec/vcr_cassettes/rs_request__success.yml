@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.runescape.com/m=hiscore/index_lite.ws?player=player
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - secure.runescape.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Oct 2023 05:38:19 GMT
+      Content-Type:
+      - text/html; charset=ISO-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01-Jan-1970 00:00:00 GMT
+      Content-Security-Policy:
+      - frame-ancestors https://*.runescape.com:* https://*.jagex.com:*
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Set-Cookie:
+      - JGSTAFFNAME=; version=1; path=/; domain=.runescape.com; secure;
+      - JGSTAFFPASS=; version=1; path=/; domain=.runescape.com; secure;
+      - __cf_bm=NCM_a.TMyUk57Yae0GzpmdSWRrYtqJbJlNOP3ad1zhg-1698385099-0-AXDghkjm6lgjyIP09pxyNul+h0tLlMuKk050r3fbCTGpT5UoAXk6CPDOqlrgDic8vvFMggMp6v82z3WDsRtdCumj1QiAcIVEg6h/shHuFRbO;
+        path=/; expires=Fri, 27-Oct-23 06:08:19 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81c89790ee6e52b3-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        1565851,157,72186
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        1161564,23,7009
+        1126015,34,21268
+        -1,1,-1
+        1163282,18,3588
+        947028,40,38252
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,1,-1
+        -1,0,-1
+        -1,1,-1
+        -1,1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+        -1,-1
+  recorded_at: Fri, 27 Oct 2023 05:38:19 GMT
+recorded_with: VCR 6.2.0

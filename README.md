@@ -80,7 +80,7 @@ Currently only contains the `#raw_data` method.
 ### To Install Gem:
 1. Clone Repo
 2. Navigate into repo
-3. gem install `rs_api-1.1.3.gem`
+3. gem install `rs_api-1.1.4.gem`
 
 ---
 

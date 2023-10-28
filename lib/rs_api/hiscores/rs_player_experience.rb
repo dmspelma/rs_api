@@ -31,7 +31,7 @@ module RsApi
       end
       table
     rescue RsApi::RsRequest::PlayerNotFound
-      puts "#{@player_name} does not exist." if display?
+      puts "#{@player_name} does not exist.".red if display?
     end
 
     def raw_data

@@ -28,7 +28,7 @@ module RsApi
           player_name = 'not found'
           VCR.use_cassette('runemetrics/player_not_found', erb: { player_name: }) do
             service = described_class.new(player_name)
-            error = RsApi::MonthlyXp::PlayerNotFound
+            error = RsApi::RsRequest::PlayerNotFound
             expect { service.raw_data }.to raise_error(error)
           end
         end

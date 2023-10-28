@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 # Uncomment below to run Examples in file. Continue for other related files
-# require_relative '../rs_constants'
-# require_relative '../helpers/check_valid_player_name.rb'
+# require_relative '../helpers/skill_helper'
+# require_relative '../helpers/player_name_helper'
 
 module RsApi
   # Base class regarding Runescape's Runemetrics API

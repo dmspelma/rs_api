@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.runescape.com/m=hiscore/index_lite.ws?player=<%= player_name %>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - secure.runescape.com
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 27 Oct 2023 05:40:56 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=cMlUmo_cESoCMR3LBh0VSOaBAQ2Apjhv00P3W2wmOjQ-1698385256-0-AWKPjtKY/UwyhANEbXJ8xUTTWTbGy3145Rs+eCY3FrsibDuWSRDS7bpIENTuy2AAcV3jneEjCSqEf/TF2pNaBmxgzfqXK45MiSaAt2i13Rrj;
+        path=/; expires=Fri, 27-Oct-23 06:10:56 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81c89b6778fa2a86-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '<!DOCTYPE html><html><head><title>404 - Page not found</title> <meta
+        charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"
+        /><style>body, html{margin: 0; padding: 0; height: 100%; overflow: hidden;}#content{position:absolute;
+        left: 0; right: 0; bottom: 0; top: 0px;}.error-frame{height: 100%;width: 100%;border:
+        0;}</style></head><body><div id="content"><iframe class="error-frame" src="https://www.runescape.com/error404"></iframe></div><script
+        src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script
+        type="text/javascript" src="https://www.runescape.com/js/rs3/plugins-7.js"></script><script
+        src="https://www.runescape.com/js/rs3/gtm-0.js"></script><script>(function(){var
+        js = "window[''__CF$cv$params'']={r:''81c89b6778fa2a86'',t:''MTY5ODM4NTI1Ni4yNzkwMDA=''};_cpo=document.createElement(''script'');_cpo.nonce='''',_cpo.src=''/cdn-cgi/challenge-platform/scripts/jsd/main.js'',document.getElementsByTagName(''head'')[0].appendChild(_cpo);";var
+        _0xh = document.createElement(''iframe'');_0xh.height = 1;_0xh.width = 1;_0xh.style.position
+        = ''absolute'';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border =
+        ''none'';_0xh.style.visibility = ''hidden'';document.body.appendChild(_0xh);function
+        handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if
+        (_0xi) {var _0xj = _0xi.createElement(''script'');_0xj.innerHTML = js;_0xi.getElementsByTagName(''head'')[0].appendChild(_0xj);}}if
+        (document.readyState !== ''loading'') {handler();} else if (window.addEventListener)
+        {document.addEventListener(''DOMContentLoaded'', handler);} else {var prev
+        = document.onreadystatechange || function () {};document.onreadystatechange
+        = function (e) {prev(e);if (document.readyState !== ''loading'') {document.onreadystatechange
+        = prev;handler();}};}})();</script></body></html>
+
+        '
+  recorded_at: Fri, 27 Oct 2023 05:40:56 GMT
+recorded_with: VCR 6.2.0

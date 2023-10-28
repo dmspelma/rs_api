@@ -14,7 +14,7 @@ module RsApi
         VCR.use_cassette('player_experience__not_found', erb:) do
           service = described_class.new(unknown_name)
 
-          expect { service.raw_data }.to raise_error(RsApi::PlayerExperience::PlayerNotFound)
+          expect { service.raw_data }.to raise_error(RsApi::RsRequest::PlayerNotFound)
         end
       end
 
@@ -26,7 +26,6 @@ module RsApi
         # I need to allow playback repeats because `raw_data` has no data
         VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
-          # binding.pry
           # Can something else help test text from puts?
           expect(service.display).to be_nil
           expect { service.display }.not_to raise_error

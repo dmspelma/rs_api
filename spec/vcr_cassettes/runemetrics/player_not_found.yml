@@ -17,8 +17,8 @@ http_interactions:
       - apps.runescape.com
   response:
     status:
-      code: 302
-      message: Found
+      code: 404
+      message: Not Found
     headers:
       Date:
       - Tue, 03 Oct 2023 20:10:10 GMT
@@ -32,8 +32,6 @@ http_interactions:
       - __cf_bm=K1fnqedmwMDgtrIFRFJWID64IqLjjJiClfZGCnzRfN8-1696363810-0-AWIWlx02yY6lETKISt1J5Vi15/sX/fKjEN+W0ZDT9VDiKx069jEOBERLcO4JmObmqNuTIOOznfu8UJbRs8VDQBzQRUFLSYybz7RT2f4TPUbh;
         path=/; expires=Tue, 03-Oct-23 20:40:10 GMT; domain=.runescape.com; HttpOnly;
         Secure; SameSite=None
-      Location:
-      - https://www.runescape.com/unavailable
       Cf-Cache-Status:
       - DYNAMIC
       Server:

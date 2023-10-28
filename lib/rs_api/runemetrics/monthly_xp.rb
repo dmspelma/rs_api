@@ -11,30 +11,28 @@ module RsApi
   class MonthlyXp < Runemetrics
     class MissingPlayerData < StandardError; end
 
+    # def display; end
+
     def raw_data
       @raw_data ||= request_all_data
     end
 
     private
 
-    def missing_player_data
-      MissingPlayerData.new('Player data is missing.')
-    end
-
     def request_all_data
-      puts 'Processing request. Please wait...' if display?
+      puts 'Processing request. Please wait...'.yellow if display?
       data = {}
       sum_total_gain_xp = 0
 
       MONTHLY_XP_SKILL_ID_CONST.each do |skill_id, skill_name|
-        puts "Collecting #{skill_name} data..." if display?
+        puts "Collecting #{skill_name} data...".yellow if display?
         parsed_response = monthly_xp_request(skill_id)
 
         data[skill_name] = parsed_response
         sum_total_gain_xp += data[skill_name]['totalGain']
       end
 
-      raise missing_player_data if sum_total_gain_xp.zero?
+      raise MissingPlayerData, 'Player data is empty.' if sum_total_gain_xp.zero?
 
       data
     end

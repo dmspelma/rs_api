@@ -12,12 +12,12 @@ module RsApi
 
     private
 
-    def display?
-      RsApi.load_config['display_output']
+    def colour?
+      Settings.colour_output
     end
 
-    def colour?
-      RsApi.load_config['colour_output']
+    def display?
+      Settings.display_output
     end
 
     def params

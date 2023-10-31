@@ -48,7 +48,7 @@ module RsApi
     end
 
     def url
-      'https://apps.runescape.com/runemetrics/xp-monthly'
+      Settings.runescape_urls.monthly_xp_url
     end
   end
 end

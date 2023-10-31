@@ -20,8 +20,6 @@ module RsApi
       @player_name = player_name
     end
 
-    # Pull puts form here, make display return table object
-    # Then a print method can be included? or used separately?
     def display
       fill_table_data if table.rows.empty?
       if display?
@@ -86,8 +84,8 @@ module RsApi
     end
 
     def url
-      # Url for Runescape 3's Highscore API
-      'https://secure.runescape.com/m=hiscore/index_lite.ws?'
+      # RsApi.load_config['runescape_urls']['hiscore_url']
+      Settings.runescape_urls.hiscore_url
     end
 
     def parsed

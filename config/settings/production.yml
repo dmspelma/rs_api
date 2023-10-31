@@ -4,8 +4,3 @@
 ---
 colour_output: true
 display_output: true
-
-runescape_urls:
-  hiscore_url: 'https://secure.runescape.com/m=hiscore/index_lite.ws?'
-  monthly_xp_url: 'https://apps.runescape.com/runemetrics/xp-monthly'
-  unavailable_url: 'https://www.runescape.com/unavailable'

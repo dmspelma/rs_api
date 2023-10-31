@@ -1,2 +1,11 @@
-display_output: false
+# When adding a new setting, please ensure this file is updated.
+# Additionally, ensure all settings are sorted alphabetically.
+
+---
 colour_output: false
+display_output: false
+
+runescape_urls:
+  hiscore_url: 'https://secure.runescape.com/m=hiscore/index_lite.ws?'
+  monthly_xp_url: 'https://apps.runescape.com/runemetrics/xp-monthly'
+  unavailable_url: 'https://www.runescape.com/unavailable'

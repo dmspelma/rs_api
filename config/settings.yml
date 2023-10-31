@@ -4,7 +4,12 @@
 
 # When adding a new setting, please ensure this file is updated.
 # Additionally, ensure all settings are sorted alphabetically.
-
+---
 # Do you want output text displayed when performing various methods
-display_output:
 colour_output:
+display_output:
+
+runescape_urls:
+  hiscore_url:
+  monthly_xp_url:
+  unavailable_url:

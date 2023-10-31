@@ -1,2 +1,6 @@
-display_output: true
+# When adding a new setting, please ensure this file is updated.
+# Additionally, ensure all settings are sorted alphabetically.
+
+---
 colour_output: true
+display_output: true

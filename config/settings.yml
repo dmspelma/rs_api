@@ -4,7 +4,12 @@
 
 # When adding a new setting, please ensure this file is updated.
 # Additionally, ensure all settings are sorted alphabetically.
-
+---
 # Do you want output text displayed when performing various methods
-display_output:
-colour_output:
+colour_output:  # bool
+display_output: # bool
+
+runescape_urls:
+  hiscore_url: 'https://secure.runescape.com/m=hiscore/index_lite.ws?'
+  monthly_xp_url: 'https://apps.runescape.com/runemetrics/xp-monthly'
+  unavailable_url: 'https://www.runescape.com/unavailable'

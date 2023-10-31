@@ -21,11 +21,11 @@ module RsApi
       it 'displays PlayerNotFound' do
         unknown_name = 'unknown'
         erb = { player_name: unknown_name }
-        RsApi.stub(:load_config).and_return({ display_output: true })
 
         # I need to allow playback repeats because `raw_data` has no data
         VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
+
           # Can something else help test text from puts?
           expect(service.display).to be_nil
           expect { service.display }.not_to raise_error

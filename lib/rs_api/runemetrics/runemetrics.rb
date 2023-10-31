@@ -20,7 +20,7 @@ module RsApi
     private
 
     def display?
-      RsApi.load_config['display_output']
+      Settings.display_output
     end
 
     def params

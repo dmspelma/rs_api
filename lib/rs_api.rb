@@ -1,6 +1,9 @@
 # frozen_string_literal:true
 
 require 'config'
+require 'google/apis/sheets_v4'
+require 'googleauth'
+require 'googleauth/stores/file_token_store'
 require 'json'
 require 'net/http'
 require 'text-table'
@@ -27,7 +30,11 @@ module RsApi
   Config.setup do |config|
     env = ENV['RS_API_ENV'] || 'development'
 
+    # Set preferred settings
     config.const_name = 'Settings'
+    config.evaluate_erb_in_yaml = true
+
+    # Load Settings
     config.load_and_set_settings(Config.setting_files('config', env))
   end
 end

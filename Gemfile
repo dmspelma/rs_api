@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org' do # default source
   gem 'config', '~> 4.2'
+  gem 'google-apis-sheets_v4', '~> 0.26'
   gem 'rspec', '~> 3.10'
   gem 'rubocop', '~> 1.43'
   gem 'rubocop-rspec'

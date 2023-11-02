@@ -13,7 +13,14 @@ module RsApi
 
     # def display; end
 
+    def previous_monthly_xp_data
+      # # Last entry is this current month
+      # # Therefore, previous month is second to last entry
+      raw_data.map { |data| data.last['monthData'][-2] }
+    end
+
     def raw_data
+      # Data is a hash of the last 12 months of data for each key skill_name
       @raw_data ||= request_all_data
     end
 

@@ -1,5 +1,6 @@
 # frozen_string_literal:true
 
+require 'active_support/inflector'
 require 'config'
 require 'google/apis/sheets_v4'
 require 'googleauth'
@@ -9,23 +10,21 @@ require 'net/http'
 require 'text-table'
 require 'uri'
 require 'yaml'
-require_relative 'rs_api/helpers/integer_helper'
-require_relative 'rs_api/helpers/string_colour_helper'
+require_relative 'rs_api/patches/integer'
+require_relative 'rs_api/patches/string'
 require_relative 'rs_api/patches/text_table__cell_patch'
 require_relative 'rs_api/patches/text_table__table_patch'
-require_relative 'rs_api/version'
 
 # Base RsApi module for autoloading files
 module RsApi
-  # Find way to squish below into less lines?
-  autoload :SkillHelper, 'rs_api/helpers/skill_helper'
-  autoload :PlayerCompare, 'rs_api/hiscores/rs_player_compare'
-  autoload :PlayerExperience, 'rs_api/hiscores/rs_player_experience'
-  autoload :Hiscore, 'rs_api/hiscores/hiscore'
-  autoload :RsRequest, 'rs_api/rs_request'
-  autoload :PlayerNameHelper, 'rs_api/helpers/player_name_helper'
-  autoload :Runemetrics, 'rs_api/runemetrics/runemetrics'
-  autoload :MonthlyXp, 'rs_api/runemetrics/monthly_xp'
+  def self.autoload_files(*sub_dir)
+    sub_dir.each do |s|
+      Dir[File.join(__dir__, 'rs_api', s.to_s, '*.rb')].each do |file|
+        class_name = File.basename(file, '.rb').camelcase
+        autoload class_name, file
+      end
+    end
+  end
 
   Config.setup do |config|
     env = ENV['RS_API_ENV'] || 'development'
@@ -38,3 +37,5 @@ module RsApi
     config.load_and_set_settings(Config.setting_files('config', env))
   end
 end
+
+RsApi.autoload_files(:helpers, :hiscores, :runemetrics, '')

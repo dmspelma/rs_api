@@ -4,3 +4,5 @@
 ---
 colour_output: false
 display_output: false
+
+google_credential_path: 'dummy'

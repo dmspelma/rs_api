@@ -1,6 +1,7 @@
 # frozen_string_literal:true
 
 source 'https://rubygems.org' do # default source
+  gem 'activesupport', '~> 7.1'
   gem 'config', '~> 4.2'
   gem 'google-apis-sheets_v4', '~> 0.26'
   gem 'rspec', '~> 3.10'

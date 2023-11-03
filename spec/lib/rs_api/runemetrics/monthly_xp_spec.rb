@@ -33,7 +33,16 @@ module RsApi
           end
         end
 
-        it 'returns monthly xp data for all skills' do
+        it 'returns ServiceUnavailable' do
+          player_name = 'unavailable'
+          VCR.use_cassette('runemetrics/service_unavailable', erb: { player_name: }) do
+            service = described_class.new(player_name)
+            error = RsApi::RsRequest::ServiceUnavailable
+            expect { service.raw_data }.to raise_error(error)
+          end
+        end
+
+        it 'returns monthly xp data' do
           player_name = 'tibthedragon'
           VCR.use_cassette('runemetrics/player_found', erb: { player_name: }) do
             service = described_class.new(player_name)
@@ -41,6 +50,20 @@ module RsApi
             expect { data }.not_to raise_error
             expect(data.class).to eq(Hash)
             expect(data.length).to eq(MONTHLY_XP_SKILL_ID_CONST.length)
+            # expect fixture here
+          end
+        end
+
+        it 'returns previous monthly xp data' do
+          player_name = 'tibthedragon'
+          VCR.use_cassette('runemetrics/player_found', erb: { player_name: }) do
+            service = described_class.new(player_name)
+            data = service.previous_monthly_xp_data
+
+            expect { data }.not_to raise_error
+            expect(data.class).to eq(Array)
+            expect(data.length).to eq(MONTHLY_XP_SKILL_ID_CONST.length)
+            # expect fixture here
           end
         end
       end

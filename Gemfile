@@ -7,6 +7,7 @@ source 'https://rubygems.org' do # default source
   gem 'rspec', '~> 3.10'
   gem 'rubocop', '~> 1.43'
   gem 'rubocop-rspec'
+  gem 'sidekiq', '~> 7.0'
   gem 'text-table', '~> 1.2'
 
   group :test do

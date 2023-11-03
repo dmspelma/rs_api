@@ -11,7 +11,7 @@ module RsApi
         unknown_name = 'unknown'
         erb = { player_name: unknown_name }
 
-        VCR.use_cassette('player_experience__not_found', erb:) do
+        VCR.use_cassette('hiscores/player_experience__not_found', erb:) do
           service = described_class.new(unknown_name)
           error = RsApi::RsRequest::PlayerNotFound
           expect { service.raw_data }.to raise_error(error)
@@ -23,7 +23,7 @@ module RsApi
         erb = { player_name: unavailable_name }
 
         # I need to allow repeats because when RsRequest gets ServiceUnavailable it retries
-        VCR.use_cassette('player_experience__service_unavailable', erb:, allow_playback_repeats: true) do
+        VCR.use_cassette('hiscores/player_experience__service_unavailable', erb:, allow_playback_repeats: true) do
           service = described_class.new(unavailable_name)
           error = RsApi::RsRequest::ServiceUnavailable
           expect { service.raw_data }.to raise_error(error)
@@ -35,7 +35,7 @@ module RsApi
         erb = { player_name: unknown_name }
 
         # I need to allow playback repeats because `raw_data` has no data
-        VCR.use_cassette('player_experience__not_found', erb:, allow_playback_repeats: true) do
+        VCR.use_cassette('hiscores/player_experience__not_found', erb:, allow_playback_repeats: true) do
           service = described_class.new(unknown_name)
 
           # Can something else help test text from puts?
@@ -50,7 +50,7 @@ module RsApi
 
       context 'when request successful' do
         it 'loads xp' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             player_xp = player.raw_data
 
             expect(player_xp.class).to eq(Array)
@@ -60,7 +60,7 @@ module RsApi
         end
 
         it 'formats experience' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             table = player.display
 
             # confirm experience value is formatted with .delimited
@@ -69,7 +69,7 @@ module RsApi
         end
 
         it 'displays player\'s exp' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             # Can something else help test text from puts?
             expect { player.display }.not_to raise_error
             expect(player.display).to be_instance_of(Text::Table)
@@ -77,7 +77,7 @@ module RsApi
         end
 
         it 'returns player\'s highest level' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             max = player.max_skill_level
 
             expect(max.class).to eq(String)
@@ -86,7 +86,7 @@ module RsApi
         end
 
         it 'returns all skills at player\'s highest level' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             skills_at_max = player.skills_at_max_level
 
             expect(skills_at_max.class).to eq(Array)
@@ -96,7 +96,7 @@ module RsApi
         end
 
         it 'returns player\'s experience in all skills' do
-          VCR.use_cassette('player_experience__successful', erb: { player_name: }) do
+          VCR.use_cassette('hiscores/player_experience__successful', erb: { player_name: }) do
             all_xp = player.all_skill_experience
 
             expect(all_xp.class).to eq(Array)

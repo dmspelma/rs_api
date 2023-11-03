@@ -17,7 +17,7 @@ module RsApi
 
       describe 'compares players' do
         it 'with same skill xp' do
-          VCR.use_cassette('player_compare__successful__tie', erb:) do
+          VCR.use_cassette('hiscores/player_compare__successful__tie', erb:) do
             service.compare
 
             map_of_winners = service.raw_data.map { |result| result[1] }.uniq
@@ -32,7 +32,7 @@ module RsApi
         end
 
         it 'with different skill xp' do
-          VCR.use_cassette('player_compare__successful__different_xp', erb:) do
+          VCR.use_cassette('hiscores/player_compare__successful__different_xp', erb:) do
             service.compare
 
             map_of_winners = service.raw_data.map { |result| result[1] }.uniq
@@ -47,7 +47,7 @@ module RsApi
         end
 
         it 'returns map of arrays' do
-          VCR.use_cassette('player_compare__successful__different_xp', erb:) do
+          VCR.use_cassette('hiscores/player_compare__successful__different_xp', erb:) do
             service.compare
 
             expect(service.raw_data.class).to eq(Array)
@@ -56,7 +56,7 @@ module RsApi
         end
 
         it 'display xp comparison' do
-          VCR.use_cassette('player_compare__successful__different_xp', erb:) do
+          VCR.use_cassette('hiscores/player_compare__successful__different_xp', erb:) do
             # Can something else help test text from puts?
             expect { service.display }.not_to raise_error
             expect(service.display).to be_instance_of(Text::Table)

@@ -92,7 +92,7 @@ module RsApi
       # Response is in CSV format
       response = RsRequest.new(url, params).get
 
-      response.body.split(/\n/).map { |item| item.split(',') }
+      response.body.split("\n").map { |item| item.split(',') }
     end
 
     def params

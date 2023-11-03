@@ -14,10 +14,5 @@ Gem::Specification.new do |s|
   s.require_paths         = ['lib']
   s.homepage              = 'https://github.com/dmspelma/rs_api'
   s.license               = 'MIT'
-
-  s.add_dependency('text-table', ['~> 1.2', '>= 1.2.4'])
-
-  s.add_development_dependency('rspec', '~> 3.10')
-  s.add_development_dependency('webmock', '~> 3.14')
   s.metadata['rubygems_mfa_required'] = 'true'
 end

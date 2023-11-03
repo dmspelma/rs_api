@@ -13,8 +13,20 @@ module RsApi
 
         VCR.use_cassette('player_experience__not_found', erb:) do
           service = described_class.new(unknown_name)
+          error = RsApi::RsRequest::PlayerNotFound
+          expect { service.raw_data }.to raise_error(error)
+        end
+      end
 
-          expect { service.raw_data }.to raise_error(RsApi::RsRequest::PlayerNotFound)
+      it 'returns ServiceUnavailable' do
+        unavailable_name = 'unavailable'
+        erb = { player_name: unavailable_name }
+
+        # I need to allow repeats because when RsRequest gets ServiceUnavailable it retries
+        VCR.use_cassette('player_experience__service_unavailable', erb:, allow_playback_repeats: true) do
+          service = described_class.new(unavailable_name)
+          error = RsApi::RsRequest::ServiceUnavailable
+          expect { service.raw_data }.to raise_error(error)
         end
       end
 
@@ -43,6 +55,7 @@ module RsApi
 
             expect(player_xp.class).to eq(Array)
             expect(player_xp.length).to eq(SKILL_ID_CONST.length)
+            # expect fixture here
           end
         end
 

@@ -27,6 +27,7 @@ module RsApi
             expect(map_of_winners.length).to eq(1)
             expect(map_of_winners.first).to eq('TIE')
             expect(total_xp_diff).to eq(0)
+            # expect fixture here?
           end
         end
 
@@ -41,6 +42,7 @@ module RsApi
             expect(map_of_winners.length).to eq(3)
             expect(map_of_winners.sort).to eq(%w[TIE player1 player2].sort)
             expect(total_xp_diff).not_to eq(0)
+            # expect fixture here?
           end
         end
 

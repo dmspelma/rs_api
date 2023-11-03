@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=unavailable&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 02:35:08 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=CBC30F11A8233BD0A7599386F7FC9327; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=ZHEGaIKG34r0PD9W6XFpSW9b8BvpMkLMfprixMPZHAA-1698978908-0-AVOjT5JqIWfnAluG44UFxNWr3bYjmpZHwwmEnMH6WZ8+52DkwI0wTYf7IBHUtMhIlgYLtK5eiVFiEWN7RRQuZ4Q3kwQvX5vQ39j5VYlLgAfF;
+        path=/; expires=Fri, 03-Nov-23 03:05:08 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Location:
+      - https://www.runescape.com/unavailable
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 820138b9f8402ad5-LAX
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 03 Nov 2023 02:35:08 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=unavailable&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 02:35:11 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=929DF5AF8C1064C69699E2D8F59FB84B; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=dxBIUCPQ9tXy3xdWHEG0wL6l.ZMaL_dEfCt6yX6gX80-1698978911-0-AS5NdDD1T3PC1zJh0dPiSYbkJstTox77298I1i27FxuVOUFTv6Wd13HKMyJYPThYqdT95LUChcW9DL4Ag/+wi+PzPtDH5YcgetBD1Le/2z0f;
+        path=/; expires=Fri, 03-Nov-23 03:05:11 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Location:
+      - https://www.runescape.com/unavailable
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 820138e17dd61031-LAX
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 03 Nov 2023 02:35:11 GMT
+- request:
+    method: get
+    uri: https://apps.runescape.com/runemetrics/xp-monthly?searchName=unavailable&skillid=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - apps.runescape.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 02:35:17 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=1A50C6B7B69C954765880D7720D5F51C; Domain=runescape.com; Path=/;
+        Secure; HttpOnly
+      - __cf_bm=a8M2w_38ZIX.dOykDw9n5RJhh6s4tmHlfbm4L47Ur7w-1698978917-0-AZ51cui4q8b286Fh2dLFqNGtAUA/+o9g2HWe55pb2R0U97iFFlsSp5AJxcDk3YDgU9PRSKI4uWAH8NzACqxvp9juGmR9wkaBweNrSGCAT933;
+        path=/; expires=Fri, 03-Nov-23 03:05:17 GMT; domain=.runescape.com; HttpOnly;
+        Secure; SameSite=None
+      Location:
+      - https://www.runescape.com/unavailable
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 820138f62ffc2b86-LAX
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 03 Nov 2023 02:35:17 GMT
+recorded_with: VCR 6.2.0

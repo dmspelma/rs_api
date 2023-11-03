@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description           = 'Code for using player data from Runescape'
   s.authors               = 'Drew Spelman'
   s.email                 = ['drew.spelman@gmail.com', 'thisfoxcodes@gmail.com']
-  s.files                 = Dir['{lib}/**/*.rb']
+  s.files                 = Dir['{lib}/**/*.rb'] + Dir['{config}/**/*.rb']
   s.require_paths         = ['lib']
   s.homepage              = 'https://github.com/dmspelma/rs_api'
   s.license               = 'MIT'

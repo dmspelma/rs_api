@@ -1,0 +1,48 @@
+name: Publish Gem
+
+on:
+  push:
+    branches:
+      - 'master'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up release please
+        uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: ruby
+          package-name: rs_api
+          version-file: "lib/rs_api/version.rb"
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.1
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Install dependencies
+        run: bundle install
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Build and publish gem
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${RS_API_RUBYGEMS_KEY}\n" > $HOME/.gem/credentials
+          gem build *.gemspec
+          gem push *.gem
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RS_API_RUBYGEMS_KEY }}
+        if: ${{ steps.release.outputs.release_created }}

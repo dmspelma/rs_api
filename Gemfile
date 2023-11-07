@@ -1,5 +1,7 @@
 # frozen_string_literal:true
 
+source 'https://rubygems.org'
+
 source 'https://rubygems.org' do # default source
   gem 'activesupport', '~> 7.1'
   gem 'config', '~> 4.2'

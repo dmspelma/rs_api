@@ -77,10 +77,11 @@ Currently only contains the `#raw_data` method.
 
 ---
 
+### To include in Gemfile:
+1. `gem 'rs_api', '~> 1'`
+
 ### To Install Gem:
-1. Clone Repo
-2. Navigate into repo
-3. gem install `rs_api-1.1.4.gem`
+1. `'gem install rs_api'`
 
 ---
 

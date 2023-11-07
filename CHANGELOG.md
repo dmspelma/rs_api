@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/dmspelma/rs_api/compare/v1.0.1...v1.0.2) (2023-11-07)
+
+
+### Bug Fixes
+
+* correct workflow ([f73d48c](https://github.com/dmspelma/rs_api/commit/f73d48cb990ba8a469f5f888124fd9cf1e543ff6))
+
 ## [1.0.1](https://github.com/dmspelma/rs_api/compare/v1.0.0...v1.0.1) (2023-11-07)
 
 

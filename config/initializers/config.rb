@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Config.setup do |config|
-  env = ENV['RS_API_ENV'] || 'development'
+  env = ENV.fetch('RS_API_ENV', 'development')
 
   # Set preferred settings
   config.const_name = 'Settings'

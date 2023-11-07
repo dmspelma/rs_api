@@ -40,9 +40,9 @@ jobs:
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials
           chmod 0600 $HOME/.gem/credentials
-          printf -- "---\n:rubygems_api_key: ${RS_API_RUBYGEMS_KEY}\n" > $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${API_KEY}\n" > $HOME/.gem/credentials
           gem build *.gemspec
           gem push *.gem
         env:
-          RUBYGEMS_API_KEY: ${{ secrets.RS_API_RUBYGEMS_KEY }}
+          API_KEY: ${{ secrets.RS_API_RUBYGEMS_KEY }}
         if: ${{ steps.release.outputs.release_created }}

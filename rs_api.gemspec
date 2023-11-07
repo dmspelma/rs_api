@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   s.require_paths         = ['lib']
   s.homepage              = 'https://github.com/dmspelma/rs_api'
   s.license               = 'MIT'
-  s.metadata['rubygems_mfa_required'] = 'true'
+  s.metadata              = { 'github_repo' => 'ssh://github.com/dmspelma/rs_api',
+                              'rubygems_mfa_required' => 'false' }
 end

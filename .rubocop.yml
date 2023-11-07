@@ -17,6 +17,8 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'lib/rs_api/patches/*'
+Gemspec/RequireMFA:
+  Enabled: false
 Layout/CaseIndentation:
   EnforcedStyle: end
 Layout/EndAlignment:

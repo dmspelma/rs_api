@@ -1,0 +1,13 @@
+# Ignore these ruby-based files:
+Gemfile.lock
+.ruby-version
+*.gem
+
+# To ignore checking simplecov files
+/coverage/
+
+# Ignore macOs specifc
+.DS_Store
+
+# Ignore js-related files
+/node_modules/

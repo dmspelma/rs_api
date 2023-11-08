@@ -5,4 +5,4 @@
 colour_output: true
 display_output: true
 
-google_credential_path: <%= ENV['RS_API_GOOGLE_CRED'] %>
+google_credential_path: <%= ENV.fetch('RS_API_GOOGLE_CRED') %>

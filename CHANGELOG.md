@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/dmspelma/rs_api/compare/v1.0.2...v1.1.0) (2023-11-11)
+
+
+### Features
+
+* change gemspec required version ([6d00e65](https://github.com/dmspelma/rs_api/commit/6d00e654a551e190890cf12e29a5b41e7ed163ab))
+
+
+### Bug Fixes
+
+* securely fetch env values ([ed657ab](https://github.com/dmspelma/rs_api/commit/ed657ab34e5efd7509dc0e3f7c75765bef47db02))
+
 ## [1.0.2](https://github.com/dmspelma/rs_api/compare/v1.0.1...v1.0.2) (2023-11-07)
 
 

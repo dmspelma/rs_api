@@ -83,11 +83,6 @@ module RsApi
       value.to_i.delimited
     end
 
-    def url
-      # RsApi.load_config['runescape_urls']['hiscore_url']
-      Settings.runescape_urls.hiscore_url
-    end
-
     def parsed
       # Response is in CSV format
       response = RsRequest.new(url, params).get

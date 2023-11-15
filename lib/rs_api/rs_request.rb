@@ -43,7 +43,7 @@ module RsApi
     end
 
     def unavailable_url
-      Settings.runescape_urls.unavailable_url
+      'https://www.runescape.com/unavailable'
     end
 
     def uri

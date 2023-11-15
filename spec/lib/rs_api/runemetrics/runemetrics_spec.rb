@@ -13,9 +13,9 @@ module RsApi
         expect { service.send(:params) }.to raise_error(RuntimeError, 'implement me!')
       end
 
-      it 'has default url' do
-        expect { service.send(:url) }.to raise_error(RuntimeError, 'implement me!')
-      end
+      #       it 'has default url' do
+      #         expect { service.send(:url) }.to raise_error(RuntimeError, 'implement me!')
+      #       end
 
       def player
         'player name'

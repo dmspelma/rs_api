@@ -3,7 +3,7 @@
 require_relative 'lib/rs_api/version'
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = '3.1.1'
+  s.required_ruby_version = '>= 3.1'
   s.name                  = 'rs_api'
   s.version               = RsApi::VERSION
   s.summary               = ''

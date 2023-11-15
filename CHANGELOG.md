@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/dmspelma/rs_api/compare/v1.1.0...v1.1.1) (2023-11-15)
+
+
+### Bug Fixes
+
+* manually set config values as temp solution ([ed8ba40](https://github.com/dmspelma/rs_api/commit/ed8ba405754f603a543de0b2413516dd2c709818))
+
 ## [1.1.0](https://github.com/dmspelma/rs_api/compare/v1.0.2...v1.1.0) (2023-11-11)
 
 

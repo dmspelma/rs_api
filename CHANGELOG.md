@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/dmspelma/rs_api/compare/v1.1.1...v1.1.2) (2023-11-15)
+
+
+### Bug Fixes
+
+* relax ruby version ([90f6e17](https://github.com/dmspelma/rs_api/commit/90f6e17c20c6def1a45bae8252f58a8742552c0b))
+
 ## [1.1.1](https://github.com/dmspelma/rs_api/compare/v1.1.0...v1.1.1) (2023-11-15)
 
 

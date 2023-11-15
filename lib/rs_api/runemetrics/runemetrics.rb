@@ -20,7 +20,8 @@ module RsApi
     private
 
     def display?
-      Settings.display_output
+      true
+      # Settings.display_output
     end
 
     def params
@@ -28,7 +29,7 @@ module RsApi
     end
 
     def url
-      raise 'implement me!'
+      'https://apps.runescape.com/runemetrics/xp-monthly'
     end
   end
 end

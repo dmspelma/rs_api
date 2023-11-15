@@ -53,10 +53,6 @@ module RsApi
     def params(skill_id)
       { searchName: player, skillid: skill_id }
     end
-
-    def url
-      Settings.runescape_urls.monthly_xp_url
-    end
   end
 end
 

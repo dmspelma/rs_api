@@ -1,7 +1,6 @@
 # frozen_string_literal:true
 
 require 'active_support/inflector'
-require 'config'
 require 'google/apis/sheets_v4'
 require 'googleauth'
 require 'googleauth/stores/file_token_store'
@@ -10,7 +9,6 @@ require 'net/http'
 require 'text-table'
 require 'uri'
 require 'yaml'
-require_relative '../config/initializers/config'
 require_relative 'rs_api/patches/integer'
 require_relative 'rs_api/patches/string'
 require_relative 'rs_api/patches/text_table__cell_patch'

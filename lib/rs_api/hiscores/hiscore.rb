@@ -13,11 +13,13 @@ module RsApi
     private
 
     def colour?
-      Settings.colour_output
+      true
+      # Settings.colour_output
     end
 
     def display?
-      Settings.display_output
+      true
+      # Settings.display_output
     end
 
     def params
@@ -29,7 +31,7 @@ module RsApi
     end
 
     def url
-      raise 'implement me!'
+      @url ||= 'https://secure.runescape.com/m=hiscore/index_lite.ws?'
     end
   end
 end
